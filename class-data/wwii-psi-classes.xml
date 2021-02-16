@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+<classes type="standard" genre="WWII-Psionics" creation-time="2017-10-28 12:00:18">
+
+	<class alias="gs-special" parents="gs, sgw, standwwii" name="German Special Trainee" nationality="German">
+		<stats>
+			<strength					min="8" max="15" mean="10.22" sdev="1.9"/>
+			<dexterity					min="8" max="15" mean="10.28" sdev="1.6"/>
+			<intelligence				min="10" max="13" mean="11"/>
+			<health						min="9" max="18" mean="10.51" sdev="1.6"/>
+		</stats>
+		<advantages>
+			<psi-resistance				min="1" max="5" mean="1.5" req="0.31"/>
+			<esp-power					min="1" max="5" mean="1" req="20"/>
+			<psychokinesis-power		min="1" max="10" mean="3" req="23"/>
+			<telepathy-power			min="2" max="7" mean="2" req="70"/>
+		</advantages>
+		<skills							min="7" max="12" mean="7.8" sdev="2.4">
+			<psi-pk-shield					max="1" req="14"/>
+			<psi-psychometry				max="1" req="23"/>
+			<psi-sense-aura					max="1" req="11"/>
+			<psi-suggest					max="1" req="12"/>
+			<psi-telekinesis				max="1" req="28"/>
+			<psi-telereceive				max="1" req="51"/>
+		</skills>
+	</class>
+
+	<class alias="gs-elitetops" parents="gs, standwwii" name="German Elite Operations" nationality="German">
+		<stats>
+			<strength					min="9" max="15" mean="10.22" sdev="1.9"/>
+			<dexterity					min="8" max="15" mean="10" sdev="1.6"/>
+			<intelligence				min="10" max="14" mean="12"/>
+			<health						min="9" max="18" mean="10.51" sdev="1.6"/>
+		</stats>
+		<advantages>
+			<psychokinesis-power		min="3" max="10" mean="4.6" sdev="1.9" req="1"/>
+			<rank						min="1" max="2" mean="1.49" sdev=".9" req="1"/>
+		</advantages>
+
+		<skills>
+			<psi-cryokinesis				min="1" max="3" req="1"/>
+		</skills>
+	</class>
+
+	<class alias="gs-pusher" parents="gs, standwwii" name="German Pusher" nationality="German">
+		<stats>
+			<strength					min="9" max="15" mean="10.22" sdev="1.9"/>
+			<dexterity					min="8" max="15" mean="10" sdev="1.6"/>
+			<intelligence				min="10" max="14" mean="12"/>
+			<health						min="9" max="18" mean="10.51" sdev="1.6"/>
+		</stats>
+		<advantages>
+			<psychokinesis-power		min="4" max="11" mean="6" sdev="1.9" req="1"/>
+			<rank						min="1" max="2" mean="1.49" sdev=".9" req="1"/>
+		</advantages>
+
+		<skills>
+			<psi-levitation					max="1" req="39"/>
+			<psi-pk-shield					max="1" req="52"/>
+			<psi-telekinesis				max="2" req="1"/>
+		</skills>
+	</class>
+
+	<class alias="gs-cea" parents="go, standwwii" name="German Counter-Espionage Agent" nationality="German" age="18~23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38~42">
+		<stats>
+			<intelligence				min="12" max="16" mean="13"/>
+		</stats>
+		<advantages>
+			<telepathy-power			min="2" max="9" mean="4" sdev="1.9" req="1"/>
+			<rank						min="3" max="4" mean="3.49" sdev=".9" req="1"/>
+		</advantages>
+
+		<skills>
+			<intelligence-analysis		min="0" max="2" req="1"/>
+			<psi-mind-wipe				max="1" req="48"/>
+			<psi-suggest				max="1" req="50"/>
+			<psi-telecontrol			max="1" req="23"/>
+			<psi-telereceive			max="2" req="87"/>
+		</skills>
+	</class>
+
+	<class alias="g-special-research" parents="milsci, lgw, gs" name="German Special Research Director" nationality="German">
+		<advantages>
+			<esp-power					min="2" max="6" mean="3.6" sdev="1.9" req="1"/>
+			<telepathy-power			min="1" max="9" mean="5" sdev="1.9" req="11"/>
+		</advantages>
+
+		<skills>
+			<psi-clairvoyance				max="2" req="54"/>
+			<psi-clairaudience				max="1" req="32"/>
+			<psi-clairsentience				max="1" req="18"/>
+			<psi-combat-sense				max="2" req="08"/>
+			<psi-precognition				max="2" req="30"/>
+			<psi-psychometry				max="2" req="1"/>
+			<psi-retrogression				max="1" req="17"/>
+			<psi-seekersense				max="1" req="41"/>
+			<psi-telereceive				max="2" req="37"/>
+		</skills>
+		<armor>
+			<ghelmet req=".04"/>
+		</armor>
+		<weapons>
+			<p-38						req="64"/>
+		</weapons>
+	</class>
+
+
+
+
+	<class alias="as-opers" parents="as, standwwii" name="American Operations Support Staff" nationality="American">
+		<stats>
+			<strength					min="8" max="15" mean="10.22" sdev="1.9"/>
+			<dexterity					min="8" max="15" mean="10.28" sdev="1.6"/>
+			<intelligence				min="10" max="13" mean="11"/>
+			<health						min="9" max="18" mean="10.51" sdev="1.6"/>
+		</stats>
+		<advantages>
+			<psi-resistance				min="1" max="5" mean="1.5" req="0.31"/>
+			<esp-power					min="1" max="5" mean="1" req="20"/>
+			<psychokinesis-power		min="1" max="10" mean="3" req="23"/>
+			<telepathy-power			min="2" max="7" mean="2" req="70"/>
+		</advantages>
+		<skills							min="7" max="12" mean="7.8" sdev="2.4">
+			<psi-pk-shield					max="1" req="10"/>
+			<psi-psychometry				max="1" req="29"/>
+			<psi-sense-aura					max="1" req="11"/>
+			<psi-suggest					max="1" req="12"/>
+			<psi-telekinesis				max="1" req="24"/>
+			<psi-telereceive				max="1" req="58"/>
+		</skills>
+	</class>
+
+	<class alias="as-special-opers" parents="as, standwwii" name="American Special Operations Personnel" nationality="American">
+		<stats>
+			<strength					min="9" max="15" mean="10.22" sdev="1.9"/>
+			<dexterity					min="8" max="15" mean="10" sdev="1.6"/>
+			<intelligence				min="10" max="14" mean="12"/>
+			<health						min="9" max="18" mean="10.51" sdev="1.6"/>
+		</stats>
+		<advantages>
+			<psychokinesis-power		min="3" max="10" mean="4.6" sdev="1.9" req="1"/>
+			<rank						min="1" max="2" mean="1.49" sdev=".9" req="1"/>
+		</advantages>
+
+		<skills>
+			<psi-pyrokinesis				min="1" max="3" req="1"/>
+		</skills>
+	</class>
+
+	<class alias="as-wind-maker" parents="as, standwwii" name="American Windmaker" nationality="American">
+		<stats>
+			<strength					min="9" max="15" mean="10.22" sdev="1.9"/>
+			<dexterity					min="8" max="15" mean="10" sdev="1.6"/>
+			<intelligence				min="10" max="14" mean="12"/>
+			<health						min="9" max="18" mean="10.51" sdev="1.6"/>
+		</stats>
+		<advantages>
+			<psychokinesis-power		min="4" max="11" mean="6" sdev="1.9" req="1"/>
+			<rank						min="1" max="2" mean="1.49" sdev=".9" req="1"/>
+		</advantages>
+
+		<skills>
+			<psi-levitation					max="1" req="39"/>
+			<psi-pk-shield					max="1" req="52"/>
+			<psi-telekinesis				max="2" req="1"/>
+		</skills>
+	</class>
+
+	<class alias="as-esp" parents="ao, standwwii" name="American Intelligence Analyst" nationality="American" age="18~23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38~42">
+		<stats>
+			<intelligence				min="12" max="16" mean="13"/>
+		</stats>
+		<advantages>
+			<telepathy-power			min="2" max="9" mean="4" sdev="1.9" req="1"/>
+			<rank						min="3" max="4" mean="3.49" sdev=".9" req="1"/>
+		</advantages>
+
+		<skills>
+			<intelligence-analysis		min="0" max="2" req="1"/>
+			<psi-mind-wipe				max="1" req="48"/>
+			<psi-suggest				max="1" req="50"/>
+			<psi-telecontrol			max="1" req="23"/>
+			<psi-telereceive			max="2" req="87"/>
+		</skills>
+	</class>
+
+	<!-- Experimental Psionics Research Lab -->
+	<class alias="a-adv-epr-sci" parents="milsci, law, as" name="American Advanced EPRL Scientist" nationality="American">
+		<advantages>
+			<esp-power					min="1" max="5" mean="3.6" sdev="1.9" req="1"/>
+			<telepathy-power			min="3" max="9" mean="5" sdev="1.9" req="20"/>
+		</advantages>
+
+		<skills>
+			<psi-precognition				max="2" req="10"/>
+			<psi-psychometry				min="1" max="3" req="1"/>
+			<psi-retrogression				max="1" req="17"/>
+			<psi-telecontrol				max="1" req="1"/>
+			<psi-telereceive				max="2" req="47"/>
+		</skills>
+		<armor>
+			<uhelmet req="59"/>
+		</armor>
+		<weapons>
+			<colt-45						req="59"/>
+		</weapons>
+	</class>
+
+</classes>

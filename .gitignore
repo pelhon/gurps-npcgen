@@ -1,0 +1,15 @@
+### Code ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### NPC GEN ###
+*.log
+*.exe
+/library.zip
+/install.vbs
+/sav
+/README.html
+/cfg/NPCGen.cfg
+/images
