@@ -79,7 +79,7 @@
 			<the_OSS			req="10"/>
 			<tiger_tanks			req="10"/>
 			<reports_of_tiger_tanks			req="10"/>
-			<war			req="10"/>
+			<war_mongers		req="4"/>
 			<war_booty			req="10"/>
 			<war_heroes			req="10"/>
 			<weak_officers			req="10"/>
@@ -88,6 +88,8 @@
 			<their_Montgomery_dartboard			req="4"/>
 			<their_Rommell_dartboard			req="5"/>
 			<their_Eisenhower_dartboard			req="5"/>
+			<good_trigger_discipline			req="07"/>
+			<poor_trigger_discipline			req="10"/>
 
 			<affirmative_action					req="-1"/>
 			<alternative_medicine				req="-1"/>
@@ -509,6 +511,10 @@
 			<dexterity					min="10" max="18"  mean="11.82" sdev="1.5"/>
 			<intelligence				min="10" max="16"  mean="10.8" sdev="1.2"/>
 		</stats>
+		<attributes>
+			<hearing			min="0" max="2" mean="0.5" sdev="1.1"/>
+			<vision				min="0" max="3" mean="1.5" sdev="1.1"/>
+		</attributes>
 		<advantages>
 			<marksman							req="15"/>
 		</advantages>
@@ -719,6 +725,7 @@
 			<enfield-38						req="04"/>
 			<sten							req="07"/>
 			<greasegun						req="10"/>
+			<m-2-carbine					req="07"/>
 			<m-1-carbine					req="30"/>
 			<m-1-carbinef					req="14"/>
 			<m-1a							req="80"/>
@@ -739,7 +746,8 @@
 			<enfield-38						req="05"/>
 			<sten							req="10"/>
 			<greasegun						req="26"/>
-			<m-1-carbine					req="59"/>
+			<m-2-carbine					req="18"/>
+			<m-1-carbine					req="50"/>
 			<m-1-carbinef					req="15"/>
 			<m-1a							req="10"/>
 			<springfield-m1903				req="-1"/>
@@ -810,6 +818,7 @@
 			<thompson						req="01"/>
 			<sten							req="01"/>
 			<greasegun						req="02"/>
+			<m-2-carbine					req="-1"/>
 			<m-1-carbine					req="01"/>
 			<m-1-carbinef					req="02"/>
 			<m-1a							req="-1"/>
@@ -825,6 +834,7 @@
 			<thompson						req="-1"/>
 			<sten							req="-1"/>
 			<greasegun						req="-1"/>
+			<m-2-carbine					req="-1"/>
 			<m-1-carbine					req="-1"/>
 			<m-1-carbinef					req="-1"/>
 			<m-1a							req="-1"/>

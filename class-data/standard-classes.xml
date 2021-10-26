@@ -25,7 +25,7 @@
 			<will				min="-2" max="2" mean="0" sdev=".8"/>
 		</attributes>
 
-		<advantages						min="1" max="4" mean="1.5" sdev="1.1">
+		<advantages						min="0" max="4" mean=".98" sdev="1.0">
 			<absolute-direction							 cost="5"/>
 			<absolute-timing			min="1" max="2"	costs="2, 5"/>
 			<alcohol-tolerance						     cost="5"/>
@@ -161,6 +161,7 @@
 			<delicate-metabolism		min="-2" max="-1" costs="-20"/>
 			<delusions					min="-4" max="-1" mean="-1.2" sdev="1.4" costs="-1, -5, -10, -15"/>
 			<delusions-vision-board		min="-2" max="-1" mean="-1.1" sdev="1" costs="-5"/>
+			<disciplines-of-faith	min="-3" max="-1" mean="-1" sdev="0.9" costs="-5"/>
 			<disturbing-voice						    cost="-10"/>
 			<dreamer									cost="-1"/>
 			<dull									    cost="-1"/>
@@ -244,6 +245,7 @@
 			<stocky						min="-1" max="-1" costs="-5"/>
 			<stubborn								    cost="-5"/>
 			<stuttering								    cost="-10"/>
+			<superstitious				min="-2" max="-1" mean="-1" costs="-5"/>
 			<trademark					min="-3" max="-1" costs="-5"/>
 			<truthfulness							    cost="-5"/>
 			<ugly						min="-2" max="-1" req="08.33" mean="-1" sdev=".8" costs="-5"/>
@@ -251,7 +253,6 @@
 			<unluckiness							    cost="-10"/>
 			<vow						min="-4" max="-1" costs="-5"/>
 			<vow-celibacy				min="-1" max="-1" costs="-5"/>
-			<disciplines-of-faith	min="-3" max="-1" mean="-1" sdev="1.1" costs="-5"/>
 			<weak-immune-system					req="01.85" cost="-30"/>
 			<weirdness-magnet							cost="-15"/>
 			<xenophobia								    cost="-15"/>
@@ -402,6 +403,9 @@
 			<squirrelly_around/>
 			<stereotypes/>
 			<stupified_by/>
+			<painfully_superstitious_about/>
+			<really_superstitious_about/>
+			<superstitious_about/>
 			<talks_about/>
 			<terrified_of/>
 			<thinks_they_are_allergic_to/>
@@ -440,6 +444,7 @@
 			<parenting/>
 			<good_parenting/>
 			<bad_parenting/>
+			<barren_women/>
 			<academia/>
 			<academics/>
 			<acne/>
@@ -651,6 +656,7 @@
 			<jewelry/>
 			<job/>
 			<jobs/>
+			<kittens/>
 			<knobby_knees/>
 			<leather/>
 			<lesbians/>
@@ -679,6 +685,7 @@
 			<organized_religion/>
 			<pagans/>
 			<parents/>
+			<peaceniks/>
 			<philosophy/>
 			<physics/>
 			<pigs/>
@@ -727,6 +734,7 @@
 			<snakes/>
 			<giant_snakes/>
 			<poison_snakes/>
+			<puppies/>
 			<soap/>
 			<spicy_food/>
 			<spiders/>
@@ -815,7 +823,7 @@
 			<vegetarians/>
 			<velvet/>
 			<verbal_sparring/>
-			<war/>
+			<war_mongers/>
 			<warts/>
 			<wealthy_men/>
 			<weight_issues/>
@@ -922,6 +930,7 @@
 			<skill name="connoisseur" spec="dance"	max="2" mean="-0.4"/>
 			<skill name="connoisseur" spec="literature"	max="2" mean="-0.4"/>
 			<skill name="connoisseur" spec="music"	max="2" mean="-0.4"/>
+			<skill name="connoisseur" spec="poetry"	max="2" mean="-0.4"/>
 			<skill name="connoisseur" spec="wine"	max="2" mean="-0.4"/>
 
 			<cooking					max="2" mean="-0.4"/>
@@ -965,22 +974,21 @@
 			<history					max="1" mean="-0.4"/>
 			<hold-out					max="2" mean="-0.4"/>
 
-			<skill  name="hobby" spec="birding"				max="2"/>
-			<skill  name="hobby" spec="camping"				max="2"/>
-			<skill  name="hobby" spec="caving"				max="2"/>
-			<skill  name="hobby" spec="gardening"			max="2"/>
-			<skill  name="hobby" spec="hiking"				max="2"/>
-			<skill  name="hobby" spec="jogging"				max="2"/>
-			<skill  name="hobby" spec="juggling"			max="2"/>
-			<skill  name="hobby" spec="kite-flying"			max="2"/>
-			<skill  name="hobby" spec="needlework"			max="2"/>
-			<skill  name="hobby" spec="origami"				max="2"/>
-			<skill  name="hobby" spec="pottery"				max="2"/>
-			<skill  name="hobby" spec="puppetry"			max="2"/>
-			<skill  name="hobby" spec="roleplaying"			max="2"/>
-			<skill  name="hobby" spec="snorkling"			max="2"/>
-			<skill  name="hobby" spec="trivia"				max="2"/>
-			<skill  name="hobby" spec="whittling"			max="2"/>
+			<skill  name="hobby" spec="birding"				min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="camping"				min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="caving"				min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="gardening"			min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="hiking"				min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="jogging"				min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="juggling"			min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="kite-flying"			min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="needlework"			min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="origami"				min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="puppetry"			min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="roleplaying"			min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="snorkling"			min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="trivia"				min="-1" mean="0" max="2"/>
+			<skill  name="hobby" spec="whittling"			min="-1" mean="0" max="2"/>
 
 			<hypnotism					max="1" mean="-0.4"/>
 			<interrogation				max="2" mean="-0.4"/>
@@ -1101,6 +1109,77 @@
 			<sphonet req="12"/>
 		</weapons>
 	</class>
+
+	<class alias="manicpdg" parents="np" name="Manic Pixie Dream Girl" nationality="American" age="20~21,22,23,24,25,26,27,28,29~35" gender-ratio="1">
+		<stats>
+			<strength					min="7" max="15" mean="9.2"/>
+			<dexterity					min="7" max="15" mean="10.9"/>
+			<intelligence				min="9" max="16" mean="11.6"/>
+			<health						min="8" max="15" mean="10.2"/>
+		</stats>
+
+		<advantages>
+			<attractive					req="74"/>
+			<charisma					min="1" max="4" mean="1.3" req="22"/>
+			<common-sense				req="-1"/>
+			<empathy					req="87"/>
+			<fashion-sense				req="24"/>
+			<fit						req="24"/>
+		</advantages>
+
+		<disadvantages>
+			<callous					req="-1"/>
+			<fat						req="-1"/>
+			<flat-affect				req="-1"/>
+			<frightens-animals			req="-1"/>
+			<greed						req="-1"/>
+			<illiteracy					req="-1"/>
+			<innumerate					req="-1"/>
+			<overweight					req="-1"/>
+			<paramilitary-rank			req="-1"/>
+			<rank						req="-1"/>
+			<sadism						req="-1"/>
+			<ugly						req="-1"/>
+			<clueless						req="10"/>
+			<compulsive-wackiness			req="98"/>
+			<guilt-complex					req="60"/>
+			<klutz							req="10"/>
+			<oblivious						req="20"/>
+			<overconfidence					req="10"/>
+			<pacifism-self-defense			req="70"/>
+			<stubborn						req="20"/>
+			<weirdness-magnet				req="50"/>
+		</disadvantages>
+
+		<skills							min="6" max="13" mean="9.5">
+			<dancing					max="2" req="20"/>
+			<naturalist					max="2" req="34"/>
+			<performance				max="2" req="20"/>
+			<pick-pocket				max="2" req="12"/>
+			<public-speaking			min="-1" max="2" req="32"/>
+			<riding						min="0" max="2" req="10"/>
+			<scrounging					max="2" req="16"/>
+			<singing					max="2" req="20"/>
+			<skating					max="2" req="20"/>
+			<skill  name="hobby" spec="camping"			req="10"/>
+			<skill  name="hobby" spec="caving"			req="10"/>
+			<skill  name="hobby" spec="jogging"			req="20"/>
+			<skill  name="hobby" spec="juggling"		req="20"/>
+			<skill  name="hobby" spec="kite-flying"		req="20"/>
+			<skill  name="hobby" spec="origami"			req="20"/>
+			<skill  name="hobby" spec="puppetry"		req="10"/>
+			<skill  name="hobby" spec="trivia"			req="10"/>
+			<skill  name="hobby" spec="whittling"		req="10"/>
+			<skill name="artist" spec="drawing"			req="10"/>
+			<skill name="artist" spec="painting"		req="20"/>
+			<skill name="artist" spec="sculpting"		req="20"/>
+			<skill name="connoisseur" spec="dance"		req="20"/>
+			<skill name="connoisseur" spec="literature"	req="20"/>
+			<skill name="connoisseur" spec="music"		req="10"/>
+		</skills>
+	</class>
+
+
 
 	<class alias="ngk" parents="np" name="Normal Geek" nationality="American" gender-ratio="64">
 		<stats>
