@@ -128,7 +128,7 @@
 			<computer-programming		max="2" req="-1"/>
 			<skill name="gunner" spec="mg"					min="-1" max="1" req="31"/>
 			<skill name="guns" spec="machine-pistol"		req="-1"/>
-			<skill  name="hobby" spec="roleplaying"			req="-1"/> 
+			<skill  name="hobby" spec="roleplaying"			req="-1"/>
 			<riding						req="13"/>
 			<scuba						req="-1"/>
 			<language-chinese			max="-1" req="0.26" mean="-2.4" min="-4"/>
@@ -236,7 +236,7 @@
 		</weapons>
 	</class>
 
-	<class alias="so" abstract="1" name="Standard Officer" 
+	<class alias="so" abstract="1" name="Standard Officer"
 	       age="18~21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38~56">
 		<stats>
 			<intelligence				min="9" max="16" mean="11.3"/>
@@ -341,7 +341,7 @@
 		</weapons>
 	</class>
 
-	<class alias="sm" abstract="1" name="Standard Medic" > 
+	<class alias="sm" abstract="1" name="Standard Medic" >
 		<disadvantages>
 			<berserk					req="01"/>
 			<blood-lust					req="-1"/>
@@ -381,7 +381,7 @@
 		</weapons>
 	</class>
 
-	<class alias="milsci" abstract="1" name="Military Scientist"  
+	<class alias="milsci" abstract="1" name="Military Scientist"
 	       age="26~30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46~68" gender-ratio="71">
 		<stats>
 			<strength					min="7" max="13"  mode="9" mean="9" sdev="1.4"/>
@@ -552,7 +552,6 @@
 		</weapons>
 	</class>
 
-
 	<class alias="se" abstract="1" name="Standard Elite Soldier" >
 		<stats>
 			<strength					min="9" max="20"  mean="11.35"/>
@@ -696,9 +695,9 @@
 			<gmask req="01"/>
 		</weapons>
 	</class>
- 
+
 	<class alias="gs" parents="sgw, standwwii" name="German Soldier" nationality="German"
-		   hair="brown, blonde, black, brown, blonde, black, brown, brown, auburn, red-brown, dark-brown, dark-brown, dark-brown, light-brown, light-brown, light-brown, blonde, blonde, blonde, blonde, dirty-blonde, dirty-blonde, light-blonde, strawberry-blonde, white-blonde, red, red-brown, orange-red, gray, dark-gray, white, black, black, blonde, jet-black, blue-black, brown-balding, bald, bald, balding, brown, light-brown, sandy-blonde, sandy-blonde, light-brown, light-blonde, blonde, blonde-balding, gray-blonde, dark-blonde" 
+		   hair="brown, blonde, black, brown, blonde, black, brown, brown, auburn, red-brown, dark-brown, dark-brown, dark-brown, light-brown, light-brown, light-brown, blonde, blonde, blonde, blonde, dirty-blonde, dirty-blonde, light-blonde, strawberry-blonde, white-blonde, red, red-brown, orange-red, gray, dark-gray, white, black, black, blonde, jet-black, blue-black, brown-balding, bald, bald, balding, brown, light-brown, sandy-blonde, sandy-blonde, light-brown, light-blonde, blonde, blonde-balding, gray-blonde, dark-blonde"
 		   age="17~17,18,19,20,21,22,35,36,38,39,40,41,42,43,44,45,46~54">
 		<skills>
 			<skill name="gunner" spec="mg"					min="-1" max="3" mean="0.2" req="42"/>
@@ -827,6 +826,7 @@
 			<machb req="1"/>
 		</weapons>
 	</class>
+
 	<class alias="almg" parents="smg, law, as" name="American Light Machinegunner" nationality="American">
 		<weapons>
 			<bar							req="1"/>
@@ -849,7 +849,9 @@
 			<colt-45 req="1"/>
 		</weapons>
 	</class>
+
 	<class alias="amarine" parents="se, as" name="American Marine" nationality="American"/>
+
 	<class alias="apara" parents="spara, as" name="American Paratrooper" nationality="American">
 		<weapons>
 			<colt-45 req="70"/>
@@ -871,6 +873,7 @@
 			<colt-45 req="98"/>
 		</weapons>
 	</class>
+
 	<class alias="anco" parents="snco, law, as" name="American Noncommissioned Officer" nationality="American">
 		<weapons>
 			<mk-ii req="65"/>
@@ -901,6 +904,7 @@
 			<uhelmet req="-1"/>
 		</armor>
 	</class>
+
 	<!-- <class alias="apo" parents="sp, ao" name="American Pilot Officer" nationality="American">
 		<advantages>
 			<rank						min="3" max="6" mode="4" req="1"/>
@@ -913,7 +917,6 @@
 			<uhelmet req="-1"/>
 		</armor>
 	</class> -->
-
 
 	<class alias="gmsniper" parents="sniper, standwwii" name="German Sniper" nationality="German">
 		<armor>
@@ -942,6 +945,7 @@
 	</class>
 
 	<class alias="gc" parents="sc, lgw, gs" name="German Clerk" nationality="German"/>
+
 	<class alias="gsc" parents="sc, go" name="German Super Clerk" nationality="German" gender-ratio="100">
 		<advantages>
 			<rank						min="1" max="3" mode="1" req="1"/>
@@ -1000,6 +1004,7 @@
 			<p-38	req="93"/>
 		</weapons>
 	</class>
+
 	<class alias="go" parents="so, lgw, gs" name="German Officer" nationality="German">
 		<weapons>
 			<p-38	req="1"/>
@@ -1008,16 +1013,19 @@
 			<ghelmet req="10"/>
 		</armor>
 	</class>
+
 	<class alias="gm" parents="sm, lgw, gs" name="German Medic" nationality="German">
 		<weapons>
 			<p-38 req="1"/>
 		</weapons>
 	</class>
+
 	<class alias="ge" parents="seng, lgw, gs" name="German Engineer" nationality="German" age="19~21,22,23,24,25,26,27,28,29~35">
 		<weapons>
 			<p-38	req="60"/>
 		</weapons>
 	</class>
+
 	<class alias="gp" parents="sp, lgw, gs" name="German Pilot" nationality="German">
 		<weapons>
 			<p-38	req="90"/>
@@ -1032,6 +1040,7 @@
 			<ghelmet req="-1"/>
 		</armor>
 	</class>
+
 	<!-- <class alias="gpo" parents="sp, go" name="German Pilot Officer" nationality="German">
 		<advantages>
 			<rank						min="3" max="6" mode="4" req="1"/>

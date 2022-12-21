@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="standard" genre="Yrth" creation-time="2021-10-25 21:35:00">
+
+  <class alias="yrgcold" name="Yrth Generic Character - Abstract" nationality="various" tech-level="3~4" age="18~24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40~60" images-male="man1.gif,man1.gif,man2.gif,man3.gif,man4.gif,man5.gif,man6.gif" images-female="woman1.gif,woman2.gif,woman3.gif">
+    <stats>
+      <strength         min="6" max="20" mean="10.5" sdev="2"/>
+      <dexterity        min="6" max="18" mean="10.4" sdev="1.7"/>
+      <intelligence     min="7" max="18" mean="10.6" sdev="1.35"/>
+      <health           min="6" max="18" mean="10.6" sdev="1.7"/>
+    </stats>
+
+    <attributes>
+      <fatigue      min="-2" max="2" mean="0" sdev=".75"/>
+      <hearing      min="-2" max="2" mean="0" sdev=".82"/>
+      <hit-points   min="-2" max="2" mean="0" sdev=".75"/>
+      <move         min="-1" max="1" mean="0" sdev=".15"/>
+      <speed        min="-1" max="1" mean="0.1" sdev=".145" precision="0.25" type="float"/>
+      <taste-smell  min="-2" max="2" mean="0" sdev=".75"/>
+      <vision       min="-4" max="1" mean="-.26" sdev="1.23"/>
+      <will         min="-2" max="2" mean="0" sdev=".8"/>
+    </attributes>
+
+    <advantages min="0" max="4" mean=".98" sdev="1.0">
+      <fashion-sense            req="01.2"/>
+      <immunity-to-disease      req="01.01"/>
+      <lightning-calculator     req="01.8"/>
+      <magery                   min="0" max="2" mean="0" req="02"/>
+      <magic-resistance         min="1" max="5" mean="1.2" req="03"/>
+      <literacy                 req="06"/>
+      <math-ability             req="-1"/>
+
+      <absolute-direction							 cost="5"/>
+      <absolute-timing			min="1" max="2"	costs="2, 5"/>
+      <alcohol-tolerance						     cost="5"/>
+      <ambidexterity						req="02.33" cost="5"/>
+      <animal-empathy							     cost="5"/>
+      <animal-friend				min="1" max="3" mean="1.36" sdev=".9" costs="5"/>
+      <attractive					min="1" max="3" mean="1.2" sdev=".8" req="05.5" costs="5, 15, 25, 40"/>
+      <awareness					min="1" max="2" mean="1" sdev=".45" req="00.35" costs="15, 35"/>
+      <cast-iron-stomach							 cost="15"/>
+      <charisma					min="1" max="4" mean="1.5" sdev="1.4" costs="5"/>
+      <clerical-investment		min="1" max="1" req="01.06" costs="5"/>
+      <collected								    cost="5"/>
+      <combat-reflexes						    cost="15"/>
+      <common-sense							    cost="10"/>
+      <composed								    cost="5"/>
+      <danger-sense						req="01.82" cost="15"/>
+      <daredevil									 cost="15"/>
+      <disease-resistant							 cost="5"/>
+      <double-jointed						req="01.3" cost="5"/>
+      <eidetic-memory				min="0" max="2" mean="0.2" sdev=".6" req="00.87" costs="15, 30, 60" zeromin="1"/>
+      <empathy							req="02.22" cost="15"/>
+      <enhanced-dodge							    cost="15"/>
+      <enhanced-parry							    cost="10"/>
+      <extra-attack				min="1" max="1" costs="25"/>
+      <fashion-sense						req="02.77" cost="5"/>
+      <fearlessness				min="1" max="4" mean="1.5" sdev="1.4" costs="2"/>
+      <fit						min="1" max="2" mean="1" sdev=".45" costs="5, 15"/>
+      <hard-to-kill				min="1" max="4" mean="1.5" sdev="1.4" costs="5"/>
+      <hard-to-read				min="1" max="2" mean="1.1" sdev="1.1" costs="5"/>
+      <higher-purpose						req="02" cost="5"/>
+      <high-pain-threshold				req="02.63" cost="10"/>
+      <honest-face								    cost="1"/>
+      <hyper-reflexes						req="01.33" cost="15"/>
+      <intuition									 cost="15"/>
+      <iron-hand					min="1" max="2" mean="1" sdev=".45" req="0.068" costs="10, 15"/>
+      <language-talent			min="1" max="3" mean="1.2" sdev=".8" costs="2"/>
+      <legal-enforcement			min="1" max="3" mean="1.2" sdev=".8" req="03.33" costs="5, 10, 15"/>
+      <legal-immunity				min="1" max="3" mean="1.2" sdev=".8" req="01.11" costs="5, 10, 20"/>
+      <lightning-calculator				req="02.56" cost="5"/>
+      <literacy					req="-1" cost="10"/>
+      <longevity							req="-1" cost="5"/>
+      <luck						min="1" max="2" mean="1" sdev=".45" req="01.25" costs="15, 30"/>
+      <magery						min="0" max="2" req="-1" costs="5, 15, 25, 35, 50, 65" zeromin="1"/>
+      <magic-resistance			min="1" max="4" req="01" costs="2"/>
+      <marksman							req="00.71" cost="30"/>
+      <math-ability						req="01.91" cost="10"/>
+      <medium								req="00.31" cost="10"/>
+      <music-ability				min="1" max="3" costs="1"/>
+      <night-vision							    cost="10"/>
+      <paramilitary-rank			req="01" min="0" max="4" mean="0.05" sdev="1.4" costs="5"/>
+      <patron						min="1" max="6" mean="2" sdev="1.6" costs="5"/>
+      <perfect-balance					req="01" cost="15"/>
+      <peripheral-vision						    cost="15"/>
+      <photogenic								    cost="3"/>
+      <pious									    cost="5"/>
+      <pitiable								    cost="5"/>
+      <psi-resistance				min="1" max="6" mean="2" sdev="1.6" req="01" costs="2"/>
+      <rank						min="0" max="4" mean="0.05" sdev="1.4" req="04" costs="5"/>
+      <rapid-healing				min="1" max="2" mean="1" sdev=".45" costs="5, 15"/>
+      <reputation					min="1" max="3" mean="1.2" sdev=".8" req="02.5" costs="5"/>
+      <sanctity								    cost="5"/>
+      <single-minded							    cost="5"/>
+      <status						min="1" max="4" mean="1.5" sdev="1.4" costs="5"/>
+      <toughness					min="1" max="2" mean="1" sdev=".45" costs="3"/>
+      <true-faith							req="00.58" cost="15"/>
+      <unfazeable							req="01" cost="15"/>
+      <versatile									  cost="5"/>
+      <voice										  cost="10"/>
+      <wealth						min="1" max="4" mean="1.5" sdev="1.4" req="02" costs="5, 10, 15, 25"/>
+
+      <!-- abby-normal stuff -->
+      <anti-psi-power				costs="3" req="-1"/>
+      <astral-projection-power	costs="3" req="-1"/>
+      <beast-possession			cost="20" req="-1"/>
+      <damage-resistance			min="1" max="8" mean="4.3" req="-1" costs="3"/>
+      <electrokinesis-power		costs="5" req="-1"/>
+      <elastic-skin				cost="20" req="-1"/>
+      <esp-power					costs="3" req="-1"/>
+      <extended-lifespan			req="-1" cost="2"/>
+      <extra-encumbrance			req="-1" cost="10"/>
+      <facial-tentacles			min="3" max="8" mean="4.6" req="-1" cost="10"/>
+      <healing-power				costs="3" req="-1"/>
+      <hyper-strength				req="-1" cost="30"/>
+      <immunity-to-disease		req="-1" cost="10"/>
+      <immunity-to-poison			req="-1" cost="15"/>
+      <impaling-resistance		min="2" max="2" req="-1" costs="5"/>
+      <invulnerability-mind-control	req="-1" cost="15"/>
+      <passive-defense			min="1" max="2" req="-1" costs="25"/>
+      <power-investiture			min="1" max="2" req="-1" costs="10"/>
+      <psychic-vampirism-power	costs="3" req="-1"/>
+      <psychokinesis-power		costs="5" req="-1"/>
+      <telepathy-power			costs="5" req="-1"/>
+      <telepathy-power			costs="5" req="-1"/>
+      <teleportation-power		costs="5" req="-1"/>
+      <trained-by-master			min="1" max="2" req="-1" costs="20"/>
+    </advantages>
+
+    <disadvantages min="1" max="4" mean="2.02" sdev="0.95">
+      <illiteracy               req="-1"/>
+      <social-stigma-ex-con     req="-1"/>
+
+      <absent-mindedness						    cost="-15"/>
+      <addiction					min="-4" max="-1" mean="-2" sdev="1.7" costs="-5"/>
+      <albinism							req="00.06" cost="-10"/>
+      <alcoholism					min="-1" max="-1" costs="-15, -20"/>
+      <bad-back					min="-2" max="-1" costs="-15, -25"/>
+      <bad-smell									cost="-10"/>
+      <bad-temper								    cost="-10"/>
+      <berserk								    cost="-15"/>
+      <blind								req="00.12" cost="-50"/>
+      <blood-lust								    cost="-10"/>
+      <bowlegged								    cost="-1"/>
+      <bully									    cost="-10"/>
+      <callous								    cost="-6"/>
+      <careful								    cost="-1"/>
+      <charitable								    cost="-15"/>
+      <chronic-pain				min="-3" max="-1" mean="-1.15" sdev="1.3" costs="-5"/>
+      <clueless								    cost="-10"/>
+      <code-of-honor				min="-3" max="-1" costs="-5"/>
+      <code-of-honor-bushido		min="-3" max="-3" req="01" costs="-5"/>
+      <code-of-honor-hospitality	min="-1" max="-1" req="02.5" costs="-5"/>
+      <color-blindness						    cost="-10"/>
+      <combat-paralysis						    cost="-15"/>
+      <compulsive-behavior		min="-3" max="-1" mean="1.1" sdev="1" costs="-5"/>
+      <compulsive-carousing		min="-2" max="-1" costs="-5"/>
+      <compulsive-lying						    cost="-15"/>
+      <compulsive-spending					    cost="-5"/>
+      <compulsive-gambling					    cost="-5"/>
+      <compulsive-preening					    cost="-5"/>
+      <compulsive-wackiness		min="-2" max="-1" costs="-5"/>
+      <confused								    cost="-10"/>
+      <cowardice								    cost="-10"/>
+      <curious					min="-2" max="-1" costs="-5"/>
+      <cursed								req="00.08" cost="-75"/>
+      <deafness							req="00.1" cost="-20"/>
+      <delicate-metabolism		min="-2" max="-1" costs="-20"/>
+      <delusions					min="-4" max="-1" mean="-1.2" sdev="1.4" costs="-1, -5, -10, -15"/>
+      <delusions-vision-board		min="-2" max="-1" mean="-1.1" sdev="1" costs="-5"/>
+      <disciplines-of-faith	min="-3" max="-1" mean="-1" sdev="0.9" costs="-5"/>
+      <disturbing-voice						    cost="-10"/>
+      <dreamer									cost="-1"/>
+      <dull									    cost="-1"/>
+      <dwarfism					  		req="00.31" cost="-15"/>
+      <dyslexia					min="-2" max="-1" costs="-5, -15"/>
+      <easy-to-read							    cost="-10"/>
+      <edgy									    cost="-5"/>
+      <enemy						min="-4" max="-1" costs="-5"/>
+      <epilepsy							req="00.6" cost="-30"/>
+      <eunuch								req="00.5" cost="-5"/>
+      <facial-paralysis			min="-3" max="-1" mean="-1.2" sdev="1.2" req="0.4" costs="-5"/>
+      <fanaticism					min="-2" max="-1" costs="-5, -15"/>
+      <fat						min="-2" max="-1" req="05" costs="-10"/>
+      <flat-affect								cost="-5"/>
+      <frightens-animals						    cost="-10"/>
+      <gigantism							req="00.08" cost="-10"/>
+      <glory-hound							    cost="-15"/>
+      <gluttony								    cost="-5"/>
+      <greed									    cost="-15"/>
+      <gregarious								    cost="-10"/>
+      <guilt-complex							    cost="-5"/>
+      <gullibility							    cost="-10"/>
+      <hemophilia							req="00.09" cost="-30"/>
+      <honesty								    cost="-10"/>
+      <illiteracy					  		req="01" cost="-10"/>
+      <impulsiveness							    cost="-10"/>
+      <innumerate								    cost="-10"/>
+      <intolerance				min="-2" max="-1" costs="-5"/>
+      <intolerance-racial			min="-2" max="-1" mean="-1.4" costs="-5"/>
+      <intolerance-religious		min="-2" max="-1" mean="-1.4" costs="-5"/>
+      <jealousy					  			    cost="-10"/>
+      <kleptomania				  				cost="-15"/>
+      <klutz						min="-2" max="-1" req="01.4" costs="-5, -15"/>
+      <lame						min="-3" max="0" mean="-.5" sdev="1.1" costs="-1, -15, -25, -35" zeromin="1"/>
+      <laziness					  			    cost="-10"/>
+      <lecherousness				  			    cost="-15"/>
+      <loner						min="-2" max="-1" costs="-5"/>
+      <low-empathy				  			    cost="-15"/>
+      <low-pain-threshold			  			    cost="-10"/>
+      <low-self-image				  			    cost="-10"/>
+      <megalomania							    req="01" cost="-10"/>
+      <miserliness							    cost="-10"/>
+      <motion-sickness						    cost="-10"/>
+      <mute								req="00.13" cost="-25"/>
+      <needy						min="-2" max="-1" costs="-10"/>
+      <night-blindness						    cost="-10"/>
+      <nightmares								    cost="-5"/>
+      <no-sense-of-humor						    cost="-10"/>
+      <nosy									    cost="-2"/>
+      <oblivious								    cost="-3"/>
+      <odious-personal-habit		min="-3" max="-1" mean="-1.6" sdev="1.4" costs="-5"/>
+      <one-arm							req="00.1" cost="-20"/>
+      <one-eye							req="00.33" cost="-15"/>
+      <one-hand							req="00.16" cost="-15"/>
+      <on-the-edge							    cost="-15"/>
+      <overconfidence							    cost="-10"/>
+      <overweight							req="16" cost="-5"/>
+      <pacifism					min="-2" max="-1" costs="-15"/>
+      <pacifism-self-defense		cost="-15" req="0.5"/>
+      <paranoid					min="-2" max="-1" mean="-1" sdev=".6" cost="-10"/>
+      <phobia						min="-3" max="-1" mean="-1.1" sdev="1.7" costs="-5"/>
+      <poverty					min="-3" max="-1" mean="-1" sdev=".8" costs="-5"/>
+      <proud									    cost="-1"/>
+      <pyromania								    cost="-5"/>
+      <reputation					min="-3" max="-1" mean="-1.2" sdev="1" costs="-5"/>
+      <sadism									    cost="-15"/>
+      <secret						min="-4" max="-1" mean="-1.6" sdev="1.4" costs="-5"/>
+      <selfish					min="-2" max="-1" costs="-5, -15"/>
+      <sense-of-duty				min="-4" max="-1" mean="-1.4" sdev="1.6" costs="-5"/>
+      <sense-of-duty-house		min="-3" max="-1" mean="-1.6" sdev="1.7" costs="-5"/>
+      <sense-of-duty-animals		min="-3" max="-2" costs="-5"/>
+      <sense-of-duty-nature		min="-3" max="-2" costs="-5"/>
+      <shy						min="-3" max="-1" mean="-1.1" sdev="1.2" costs="-5"/>
+      <skinny										 cost="-5"/>
+      <social-disease				min="-2" max="-1" costs="-5"/>
+      <social-stigma				min="-4" max="-1" mean="-1.5" sdev="1.8" costs="-5"/>
+      <social-stigma-beast		min="-4" max="-4" req="-1" costs="-5"/>
+      <social-stigma-ex-con		min="-2" max="-2" costs="-5"/>
+      <social-stigma-excommunicated	min="-2" max="-2" costs="-5"/>
+      <solipsist							req="00.15" cost="-10"/>
+      <stocky						min="-1" max="-1" costs="-5"/>
+      <stubborn								    cost="-5"/>
+      <stuttering								    cost="-10"/>
+      <superstitious				min="-2" max="-1" mean="-1" costs="-5"/>
+      <trademark					min="-3" max="-1" costs="-5"/>
+      <truthfulness							    cost="-5"/>
+      <ugly						min="-2" max="-1" req="08.33" mean="-1" sdev=".8" costs="-5"/>
+      <unfit						min="-2" max="-1" mean="-1" sdev=".7" costs="-5, -15"/>
+      <unluckiness							    cost="-10"/>
+      <vow						min="-4" max="-1" costs="-5"/>
+      <vow-celibacy				min="-1" max="-1" costs="-5"/>
+      <weak-immune-system					req="01.85" cost="-30"/>
+      <weirdness-magnet							cost="-15"/>
+      <xenophobia								    cost="-15"/>
+      <youth						min="-3" max="-1" mean="-1.2" sdev="1" costs="-2"/>
+
+      <!-- abby-normal stuff -->
+      <astral-entity				req="-1" cost="-10"/>
+      <code-of-honor-elf			min="-3" max="-1" req="-1" costs="-5"/>
+      <code-of-honor-royalty		min="-4" max="-1" costs="-5"/>
+      <dependency-energy			req="-1" cost="-10"/>
+      <fragile					req="-1" cost="-20"/>
+      <monstrous-appearance		req="-1" cost="-20"/>
+      <pantheon-outcast			req="-1" cost="-15"/>
+      <paralysis					min="-3" max="-1" mean="-1" req="-1" costs="-10"/>
+      <reprogrammable-duty		req="-1" cost="-25"/>
+      <sense-of-duty-elària		min="-3" max="-1" req="-1" mean="-1" costs="-5"/>
+      <sense-of-duty-tribe		min="-3" max="-1" req="-1" mean="-1" costs="-5"/>
+      <slave-mentality			req="-1" cost="-40"/>
+      <unhealing					req="-1" cost="-20"/>
+      <unliving					req="-1" cost="-50"/>
+      <vulnerability-cold			req="-1" cost="-10"/>
+      <vulnerability-fire			req="-1" cost="-10"/>
+    </disadvantages>
+
+    <skills min="7" max="30" mean="14" sdev="3.8">
+      <archaeology				req="-1" mean="-0.4"/>
+      <astrology					req="-1" mean="-0.4"/>
+      <biochemistry				req="-1" mean="-0.4"/>
+      <boxing						req="-1" mean="-0.4"/>
+      <chemistry					req="-1" mean="-0.4"/>
+      <computer-operation			req="-1" mean="-0.4"/>
+      <computer-programming		req="-1" mean="-0.4"/>
+      <cryptanalysis				req="-1" mean="-0.4"/>
+      <cryptography				req="-1" mean="-0.4"/>
+      <cryptology					req="-1" mean="-0.4"/>
+      <demolitions				req="-1" mean="-0.4"/>
+      <skill name="driving" spec="car"					req="-1"/>
+      <skill name="driving" spec="big-rig"				req="-1"/>
+      <skill name="driving" spec="motorcycle"			req="-1"/>
+      <skill name="electronics" spec="comms"		req="-1"/>
+      <skill name="electronics" spec="security"	req="-1"/>
+      <skill name="fast-draw" spec="smg"				req="-1" mean="-0.4"/>
+      <skill name="fast-draw" spec="pistol"			req="-1" mean="-0.4"/>
+      <skill name="fast-draw" spec="clip"				req="-1" mean="-0.4"/>
+      <skill name="gunner" spec="ballista"			max="1" mean="-0.4"/>
+      <skill name="guns" spec="light-auto"			req="-1" mean="-0.4"/>
+      <skill name="guns" spec="machine-pistol"		req="-1" mean="-0.4"/>
+      <skill name="guns" spec="pistol"				req="-1" mean="-0.4"/>
+      <skill name="guns" spec="rifle"					req="-1" mean="-0.4"/>
+      <skill name="guns" spec="shotgun"				req="-1" mean="-0.4"/>
+      <skill  name="hobby" spec="roleplaying"			req="-1"/>
+      <skill  name="hobby" spec="hiking"				req="-1"/>
+      <skill  name="hobby" spec="jogging"				req="-1"/>
+      <skill  name="hobby" spec="snorkling"			req="-1"/>
+      <language-chinese			req="-1" mean="-0.4"/>
+      <language-dutch				req="-1" mean="-0.4"/>
+      <language-french			req="-1" mean="-0.4"/>
+      <language-german			req="-1" mean="-0.4"/>
+      <language-italian			req="-1" mean="-0.4"/>
+      <language-japanese			req="-1" mean="-0.4"/>
+      <language-portuguese		req="-1" mean="-0.4"/>
+      <language-russian			req="-1" mean="-0.4"/>
+      <language-spanish			req="-1" mean="-0.4"/>
+      <linguistics				req="-1" mean="-0.4"/>
+      <mechanic					req="-1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="brass"				req="-1"/>
+      <skill name="musical-instrument" spec="piano"				req="-1"/>
+      <skill name="musical-instrument" spec="guitar"				req="-1"/>
+      <parachuting				req="-1" mean="-0.4"/>
+      <photography				req="-1" mean="-0.4"/>
+      <piloting					req="-1" mean="-0.4"/>
+
+
+      <skill name="area-knowledge" spec="village" max="2" mean="-0.4"/>
+      <skill name="area-knowledge" spec="city" max="2" mean="-0.4"/>
+      <skill name="area-knowledge" spec="nation" max="2" mean="-0.4"/>
+
+      <skill name="armory" spec="armor" max="2" mean="-0.4" req="01"/>
+      <skill name="armory" spec="melee-weapons" max="2" mean="-0.4" req="01"/>
+      <skill name="armory" spec="missile-weapons" max="2" mean="-0.4" req="01"/>
+      <skill name="armory" spec="small-arms" max="2" mean="-0.4"/>
+      <skill name="armory" spec="heavy-weapons" max="2" mean="-0.4" req="01"/>
+
+      <skill name="artist" spec="drawing" max="2" mean="0.4"/>
+      <skill name="artist" spec="painting" max="2" mean="0.4"/>
+      <skill name="artist" spec="sculpting" max="2" mean="0.4"/>
+
+      <acrobatics					max="1" mean="-0.4"/>
+      <acting						max="2" mean="-0.4"/>
+      <administration				max="2" mean="-0.4"/>
+      <agronomy					max="2" mean="-0.4"/>
+      <alchemy					max="1" req="0.5" mean="-0.4"/>
+      <animal-handling			max="1" mean="-0.4"/>
+      <archaeology				max="2" mean="-0.4"/>
+      <architecture				max="2" mean="-0.4"/>
+      <autohypnosis				max="2" mean="-0.4"/>
+      <astronomy					max="2" mean="-0.4"/>
+      <axe-mace					max="2" mean="-0.4"/>
+      <axe-throwing				max="2" mean="-0.4"/>
+      <public-speaking						max="2" mean="-0.4"/>
+      <biochemistry				max="1" mean="-0.4"/>
+      <boating					max="2" mean="-0.4"/>
+      <bow						max="1" mean="-0.4"/>
+      <boxing						max="1" mean="-0.4"/>
+      <brawling					max="2" mean="-0.4"/>
+      <breath-control				max="1" mean="-0.4"/>
+      <broad-sword				max="2" mean="-0.4"/>
+      <calligraphy				max="2" mean="-0.4"/>
+      <camouflage					max="2" mean="-0.4"/>
+      <carousing					max="2" mean="-0.4"/>
+      <carpentry					max="2" mean="-0.4"/>
+      <chemistry					max="1" mean="-0.4"/>
+      <computer-operation			max="2" mean="-0.4"/>
+      <computer-programming		max="1" mean="-0.4"/>
+
+      <skill name="connoisseur" spec="art"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="couture"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="cuisine"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="dance"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="literature"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="music"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="poetry"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="wine"	max="2" mean="-0.4"/>
+
+      <cooking					max="2" mean="-0.4"/>
+      <climbing					max="2" mean="-0.4"/>
+      <crossbow					max="2" mean="-0.4"/>
+      <cryptanalysis				max="1" req="0.76" mean="-0.4"/>
+      <cryptography				max="1" req="0.76" mean="-0.4"/>
+      <cryptology					max="1" req="0.76" mean="-0.4"/>
+      <dancing					max="2" mean="-0.4"/>
+      <demolitions				max="2" mean="-0.4"/>
+      <detect-lies				max="1" mean="-0.4"/>
+      <diagnosis					max="1" mean="-0.4"/>
+      <diplomacy					max="1" mean="-0.4"/>
+      <disguise					max="2" mean="-0.4"/>
+      <skill name="driving" spec="car"	max="2" mean="-0.4"/>
+      <skill name="driving" spec="motorcycle"	max="2" mean="-0.4"/>
+      <skill name="driving" spec="big-rig"	max="2" mean="-0.4"/>
+      <skill name="electronics" spec="comms"			max="2" mean="-0.4"/>
+      <skill name="electronics" spec="security"		max="2" mean="-0.4"/>
+      <skill name="engineering" spec="mechanical"		max="1" mean="-0.4"/>
+      <escape						max="2" mean="-0.4"/>
+      <falconry					max="2" mean="-0.4"/>
+      <farming					max="2" mean="-0.4"/>
+      <skill name="fast-draw" spec="knife"			max="2" mean="-0.4"/>
+      <skill name="fast-draw" spec="pistol"			max="2" mean="-0.4"/>
+      <skill name="fast-draw" spec="smg"				max="2" req="01.17" mean="-0.4"/>
+      <skill name="fast-draw" spec="clip"				max="2" req="01.65" mean="-0.4"/>
+      <fast-talk					max="2" mean="-0.4"/>
+      <fencing					max="2" mean="-0.4"/>
+      <first-aid					max="2" mean="-0.4"/>
+      <fishing					max="2" mean="-0.4"/>
+      <forensics					max="2" mean="-0.4"/>
+      <forgery					max="2" mean="-0.4"/>
+      <gambling					max="2" mean="-0.4"/>
+      <gesture					max="2" mean="-0.4"/>
+      <skill name="guns" spec="light-auto"			max="2" mean="-0.4"/>
+      <skill name="guns" spec="machine-pistol"		max="2" mean="-0.4"/>
+      <skill name="guns" spec="pistol"				max="2" mean="-0.4"/>
+      <skill name="guns" spec="rifle"					max="2" mean="-0.4"/>
+      <skill name="guns" spec="shotgun"				max="2" mean="-0.4"/>
+      <history					max="1" mean="-0.4"/>
+      <hold-out					max="2" mean="-0.4"/>
+
+      <skill  name="hobby" spec="birding"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="camping"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="caving"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="gardening"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="hiking"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="jogging"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="juggling"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="kite-flying"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="needlework"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="origami"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="puppetry"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="roleplaying"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="snorkling"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="trivia"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="whittling"			min="-1" mean="0" max="2"/>
+
+      <hypnotism					max="1" mean="-0.4"/>
+      <interrogation				max="2" mean="-0.4"/>
+      <intimidation				max="2" mean="-0.4"/>
+      <jeweler					max="2" mean="-0.4"/>
+      <judo						max="1" mean="-0.4"/>
+      <karate						max="1" mean="-0.4"/>
+      <knife						max="2" mean="-0.4"/>
+      <language-chinese			max="-1" req="01.26" mean="-2.4" min="-4"/>
+      <language-dutch				max="-1" req="02.76" mean="-2.4" min="-4"/>
+      <language-french			max="-1" req="04" mean="-2.4" min="-4"/>
+      <language-german			max="-1" req="04" mean="-2.4" min="-4"/>
+      <language-italian			max="-1" req="03" mean="-2.4" min="-4"/>
+      <language-japanese			max="-1" req="01" mean="-2.4" min="-4"/>
+      <language-portuguese		max="-1" req="01.76" mean="-2.4" min="-4"/>
+      <language-russian			max="-1" req="01.36" mean="-2.4" min="-4"/>
+      <language-spanish			max="-1" req="04.1" mean="-2.4" min="-4"/>
+      <skill name="law" spec="criminal"		max="2" mean="-0.4"/>
+      <skill name="law" spec="civil"			max="2" mean="-0.4"/>
+      <skill name="law" spec="martial"		max="2" mean="-0.4"/>
+      <skill name="law" spec="contractual"	max="2" mean="-0.4"/>
+      <leadership					max="2" mean="-0.4"/>
+      <linguistics				max="1" mean="-0.4"/>
+      <lip-reading				max="2" mean="-0.4"/>
+      <literature					max="1" mean="-0.4"/>
+      <lockpicking				max="2" mean="-0.4"/>
+      <mathematics				max="1" mean="-0.4"/>
+      <mechanic					max="2" mean="-0.4"/>
+      <meditation					max="1" mean="-0.4"/>
+      <merchant					max="2" mean="-0.4"/>
+      <metallurgy					max="1" mean="-0.4"/>
+
+      <skill name="musical-instrument" spec="strings"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="woodwind"			max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="brass"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="drums"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="guitar"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="piano"				max="1" mean="-0.4"/>
+
+      <naturalist					max="1" mean="-0.4"/>
+      <navigation					max="2" mean="-0.4"/>
+      <occultism					max="2" mean="-0.4"/>
+      <packing					max="2" mean="-0.4"/>
+      <panhandling				max="2" mean="-0.4"/>
+      <parachuting				max="2" mean="-0.4"/>
+      <performance				max="2" mean="-0.4"/>
+      <philosophy					max="1" mean="-0.4"/>
+      <photography				max="2" mean="-0.4"/>
+      <physician					max="1" mean="-0.4"/>
+      <pick-pocket				max="1" mean="-0.4"/>
+      <piloting					max="1" mean="-0.4"/>
+      <poetry						max="2" mean="-0.4"/>
+      <poisons					max="2" mean="-0.4"/>
+      <pottery					max="2" mean="-0.4"/>
+      <research					max="2" mean="-0.4"/>
+      <riding						max="2" mean="-0.4"/>
+      <ritual-magic				max="2" req="-1" mean="-0.4"/>
+      <savoir-faire				max="2" mean="-0.4"/>
+      <scrounging					max="2" mean="-0.4"/>
+      <scuba						max="2" mean="-0.4"/>
+      <sculpting					max="2" mean="-0.4"/>
+      <sex-appeal					max="2" mean="-0.4"/>
+      <shadowing					max="2" mean="-0.4"/>
+      <short-sword				max="2" mean="-0.4"/>
+      <singing					max="2" mean="-0.4"/>
+      <skating					max="1" mean="-0.4"/>
+      <skiing						max="1" mean="-0.4"/>
+      <sleight-of-hand			max="1" mean="-0.4"/>
+      <sling						max="1" mean="-0.4"/>
+      <skill name="speed-load" spec="pistol"			max="2" req="01.9"  mean="-0.4"/>
+      <skill name="speed-load" spec="smg"				max="2" req="01" mean="-0.4"/>
+      <skill name="speed-load" spec="rifle"			max="2" req="01" mean="-0.4"/>
+      <sports						max="2" mean="-0.4"/>
+      <staff						max="1" mean="-0.4"/>
+      <stealth					max="2" mean="-0.4"/>
+      <strategy					max="1" mean="-0.4"/>
+      <streetwise					max="2" mean="-0.4"/>
+      <surgery					max="1" mean="-0.4"/>
+
+      <skill name="survival" spec="arctic"			max="1" mean="-0.4"/>
+      <skill name="survival" spec="desert"			max="1" mean="-0.4"/>
+      <skill name="survival" spec="jungle"			max="1" mean="-0.4"/>
+      <skill name="survival" spec="woodlands"			max="2" mean="-0.4"/>
+      <skill name="survival" spec="plains"			max="2" mean="-0.4"/>
+
+      <swimming					max="2" mean="-0.4"/>
+      <tactics					max="1" mean="-0.4"/>
+      <teaching					max="2" mean="-0.4"/>
+      <theology					max="1" mean="-0.4"/>
+      <throwing					max="1" mean="-0.4"/>
+      <tracking					max="2" mean="-0.4"/>
+      <traps						max="2" mean="-0.4"/>
+      <two-hand-axe-mace			max="2" mean="-0.4"/>
+      <veterinary					max="1" mean="-0.4"/>
+      <whip						max="2" mean="-0.4"/>
+      <wood-working				max="2" mean="-0.4"/>
+      <writing					max="2" mean="-0.4"/>
+      <zoology					max="1" mean="-0.4"/>
+    </skills>
+
+    <quirk-verbs      min="0" max="6" mean="3.2" sdev="1.4">
+      <abhors/>
+      <abhors_people_that_hate/>
+      <abhors_people_that_like/>
+      <abhors_the_mention_of/>
+      <accepts/>
+      <accepts_that_people_love/>
+      <addicted_to/>
+      <adores/>
+      <advocate_of/>
+      <afraid_of/>
+      <agitated_by/>
+      <allergic_to/>
+      <always_brags_about/>
+      <always_lies_about/>
+      <amused_by/>
+      <appreciates/>
+      <appreciates_those_who_know_about/>
+      <approves_of/>
+      <attracted_to/>
+      <avoids/>
+      <avoids_discussion_about/>
+      <avoids_generalizing/>
+      <avoids_learning_about/>
+      <avoids_stereotyping/>
+      <avoids_studying/>
+      <avoids_talking_about/>
+      <barely_tolerates/>
+      <believes_in/>
+      <belittles/>
+      <big_fan_of/>
+      <bitter_about/>
+      <cannot_lie_about/>
+      <collects_trivia_on/>
+      <concerned_with/>
+      <condemns/>
+      <confounded_by/>
+      <crazy_about/>
+      <deathly_afraid_of/>
+      <despises/>
+      <detests/>
+      <disgusted_by/>
+      <dislikes/>
+      <dislikes_talking_about/>
+      <dismisses/>
+      <dismisses_the_topic_of/>
+      <disregards/>
+      <disregards_discussion_of/>
+      <distrusts/>
+      <disturbed_by/>
+      <does_not_like/>
+      <easily_amused_by/>
+      <enjoys/>
+      <enjoys_learning_about/>
+      <enjoys_studying/>
+      <enjoys_talking_about/>
+      <enjoys_the_topic_of/>
+      <entertained_by/>
+      <fancies/>
+      <fascinated_by/>
+      <fears/>
+      <fears_the_topic_of/>
+      <feels_incompetent_about/>
+      <fixated_on/>
+      <frustrated_by/>
+      <generalizes/>
+      <hates/>
+      <horrified_by/>
+      <impatient_with/>
+      <in_favor_of/>
+      <indifferent_about/>
+      <indulges_in/>
+      <infatuated_with/>
+      <insensitive_about/>
+      <irrational_fear_of/>
+      <is_forgiving_of/>
+      <lies_about/>
+      <likes/>
+      <loathes/>
+      <loves/>
+      <mildly_allergic_to/>
+      <mortified_by/>
+      <nauseated_by/>
+      <neglectful_of/>
+      <nervous_around/>
+      <never_lies_about/>
+      <not_terribly_fond_of/>
+      <obsessed_with/>
+      <opposed_to/>
+      <overvalues/>
+      <paranoid_about/>
+      <patient_with/>
+      <perturbed_by/>
+      <petrified_by/>
+      <prefers/>
+      <preoccupied_with/>
+      <puzzled_by/>
+      <really_afraid_of/>
+      <really_attracted_to/>
+      <really_crazy_about/>
+      <really_disgusted_by/>
+      <really_dislikes/>
+      <really_hates/>
+      <really_into/>
+      <really_obsessed_with/>
+      <really_preoccupied_with/>
+      <really_sensitive_about/>
+      <really_terrified_of/>
+      <rejects/>
+      <relaxed_around/>
+      <repelled_by/>
+      <restless_around/>
+      <revolted_by/>
+      <ridicules/>
+      <ridicules_those_afraid_of/>
+      <ridicules_those_into/>
+      <ridicules_those_who_dislike/>
+      <ridicules_those_who_love/>
+      <ridicules_those_who_worship/>
+      <scoffs_at/>
+      <scorns/>
+      <sensitive_about/>
+      <sickened_by/>
+      <squirrelly_around/>
+      <stereotypes/>
+      <stupified_by/>
+      <painfully_superstitious_about/>
+      <really_superstitious_about/>
+      <superstitious_about/>
+      <talks_about/>
+      <terrified_of/>
+      <thinks_they_are_allergic_to/>
+      <thinks_they_hate/>
+      <thinks_they_like/>
+      <thinks_they_love/>
+      <tolerates/>
+      <tries_to_accept/>
+      <tries_to_avoid/>
+      <tries_to_fathom/>
+      <tries_to_like/>
+      <tries_to_love/>
+      <tries_to_make_sense_of/>
+      <tries_to_talk_about/>
+      <tries_to_tolerate/>
+      <tries_to_understand/>
+      <uncomfortable_around/>
+      <undervalues/>
+      <uneasy_around/>
+      <violently_opposes/>
+      <violently_opposes_mention_of/>
+      <wants_to_accept/>
+      <wants_to_forget/>
+      <wants_to_hate/>
+      <wants_to_like/>
+      <wants_to_love/>
+      <wants_to_reject/>
+      <wary_of/>
+      <will_not_lie_about/>
+      <worships/>
+    </quirk-verbs>
+    <quirk-nouns      min="6" max="8" mean="7">
+      <affirmative_action					req="-1"/>
+      <alternative_medicine				req="-1"/>
+      <alternative_music					req="-1"/>
+      <bank_robbers						req="-1"/>
+      <B_movies							req="-1"/>
+      <board_games						req="-1"/>
+      <Bob_Barker							req="-1"/>
+      <breakfast_cereals					req="-1"/>
+      <cartoons							req="-1"/>
+      <cheese_burgers						req="-1"/>
+      <coke								req="-1"/>
+      <commercials						req="-1"/>
+      <computer_games						req="-1"/>
+      <computers							req="-1"/>
+      <creationism						req="-1"/>
+      <doctors							req="-1"/>
+      <epic_movies						req="-1"/>
+      <fashion_magazines					req="-1"/>
+      <fast_cars							req="-1"/>
+      <fat_pornstars						req="-1"/>
+      <fireworks							req="-1"/>
+      <free_health_care					req="-1"/>
+      <game_shows							req="-1"/>
+      <golf								req="-1"/>
+      <greek_food							req="-1"/>
+      <gun_control						req="-1"/>
+      <homemade_bombs						req="-1"/>
+      <homeopathic_drugs					req="-1"/>
+      <horror_movies						req="-1"/>
+      <Keanu_Reeves						req="-1"/>
+      <lasers								req="-1"/>
+      <monster_trucks						req="-1"/>
+      <motivational_speakers				req="-1"/>
+      <motorcycles						req="-1"/>
+      <obituaries							req="-1"/>
+      <Oprah								req="-1"/>
+      <personality_tests					req="-1"/>
+      <pop_music							req="-1"/>
+      <pop_psychology						req="-1"/>
+      <pornography						req="-1"/>
+      <reality_television					req="-1"/>
+      <recreational_drugs					req="-1"/>
+      <rockets							req="-1"/>
+      <roleplaying_games					req="-1"/>
+      <romance_novels						req="-1"/>
+      <sasquach							req="-1"/>
+      <sitcoms							req="-1"/>
+      <sleep_disorders					req="-1"/>
+      <sports_trivia						req="-1"/>
+      <stamps								req="-1"/>
+      <talk_shows							req="-1"/>
+      <UFOs								req="-1"/>
+      <vegetarians						req="-1"/>
+      <velcro								req="-1"/>
+      <travelling_by_water		req="8"/>
+      <ancient_dragons			req="10"/>
+      <Ents			req="10"/>
+      <baby_dragons			req="10"/>
+      <baby_dwarves			req="10"/>
+      <baby_elves			req="10"/>
+      <baby_kobolds			req="10"/>
+      <baby_ogres			req="10"/>
+      <baby_orcs			req="10"/>
+      <balrogs			req="10"/>
+      <black_orcs			req="10"/>
+      <castles			req="10"/>
+      <cave_orcs			req="10"/>
+      <dragon_armor			req="10"/>
+      <dragons			req="10"/>
+      <dungeon_crawls			req="10"/>
+      <dungeons			req="10"/>
+      <dwarf_rights			req="10"/>
+      <dwarves			req="10"/>
+      <elf_rights			req="10"/>
+      <elves			req="10"/>
+      <female_dwarves			req="10"/>
+      <female_elves			req="10"/>
+      <female_half-elves			req="10"/>
+      <female_half-orcs			req="10"/>
+      <female_ogres			req="10"/>
+      <female_orcs			req="10"/>
+      <floating_eyes			req="10"/>
+      <giants			req="10"/>
+      <gnomes			req="10"/>
+      <gray_dwarves			req="10"/>
+      <half-breeds			req="10"/>
+      <half-elves			req="10"/>
+      <half-orcs			req="10"/>
+      <humans			req="10"/>
+      <kobold_rights			req="10"/>
+      <kobolds			req="10"/>
+      <magic_items			req="10"/>
+      <magic_swords			req="10"/>
+      <male_orcs			req="10"/>
+      <ogres			req="10"/>
+      <orc_rights			req="10"/>
+      <orcs			req="10"/>
+      <peasants			req="10"/>
+      <quests			req="10"/>
+      <siege_engines			req="10"/>
+      <slime_molds			req="10"/>
+      <sorcerers			req="10"/>
+      <the_undead			req="10"/>
+      <unicorns			req="10"/>
+      <war_horses			req="10"/>
+    </quirk-nouns>
+
+    <weapons>
+      <handcuffs req="-1"/>
+      <camera req="-1"/>
+      <flashb req="-1"/>
+      <radioh req="-1"/>
+      <flashlight req="-1"/>
+      <hflashlight req="-1"/>
+      <nylonc req="-1"/>
+      <rflare req="-1"/>
+      <binoculars req="-1"/>
+      <rope req="07"/>
+      <torch req="04"/>
+      <backpack req="07.5"/>
+      <cphone req="-1"/>
+      <sphone req="-1"/>
+      <sphonec req="-1"/>
+      <sphoneck req="-1"/>
+      <sphonet req="-1"/>
+    </weapons>
+  </class>
+
+  <class alias="yrgc" name="Yrth Generic Character - Abstract" nationality="various" gender-ratio="49"
+    tech-level="3~4"
+    age="18~24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40~60"
+    images-male="man1.gif,man1.gif,man2.gif,man3.gif,man4.gif,man5.gif,man6.gif" images-female="woman1.gif,woman2.gif,woman3.gif">
+
+    <stats>
+      <strength					min="6" max="20" mean="10.5" sdev="2"/>
+      <dexterity					min="6" max="18" mean="10.4" sdev="1.7"/>
+      <intelligence				min="7" max="18" mean="10.6" sdev="1.35"/>
+      <health						min="6" max="18" mean="10.6" sdev="1.7"/>
+    </stats>
+
+    <attributes>
+      <fatigue			min="-2" max="2" mean="0" sdev=".75"/>
+      <hearing			min="-2" max="2" mean="0" sdev=".82"/>
+      <hit-points			min="-2" max="2" mean="0" sdev=".75"/>
+      <move				min="-1" max="1" mean="0" sdev=".15"/>
+      <speed				min="-1" max="1" mean="0.1" sdev=".145" precision="0.25" type="float"/>
+      <taste-smell		min="-2" max="2" mean="0" sdev=".75"/>
+      <vision				min="-4" max="1" mean="-.26" sdev="1.23"/>
+      <will				min="-2" max="2" mean="0" sdev=".8"/>
+    </attributes>
+
+    <advantages						min="0" max="4" mean=".98" sdev="1.0">
+      <absolute-direction							 cost="5"/>
+      <absolute-timing			min="1" max="2"	costs="2, 5"/>
+      <alcohol-tolerance						     cost="5"/>
+      <ambidexterity						req="02.33" cost="5"/>
+      <animal-empathy							     cost="5"/>
+      <animal-friend				min="1" max="3" mean="1.36" sdev=".9" costs="5"/>
+      <attractive					min="1" max="3" mean="1.2" sdev=".8" req="05.5" costs="5, 15, 25, 40"/>
+      <awareness					min="1" max="2" mean="1" sdev=".45" req="00.35" costs="15, 35"/>
+      <cast-iron-stomach							 cost="15"/>
+      <charisma					min="1" max="4" mean="1.5" sdev="1.4" costs="5"/>
+      <clerical-investment		min="1" max="1" req="01.06" costs="5"/>
+      <collected								    cost="5"/>
+      <combat-reflexes						    cost="15"/>
+      <common-sense							    cost="10"/>
+      <composed								    cost="5"/>
+      <danger-sense						req="01.82" cost="15"/>
+      <daredevil									 cost="15"/>
+      <disease-resistant							 cost="5"/>
+      <double-jointed						req="01.3" cost="5"/>
+      <eidetic-memory				min="0" max="2" mean="0.2" sdev=".6" req="00.87" costs="15, 30, 60" zeromin="1"/>
+      <empathy							req="02.22" cost="15"/>
+      <enhanced-dodge							    cost="15"/>
+      <enhanced-parry							    cost="10"/>
+      <extra-attack				min="1" max="1" costs="25"/>
+      <fashion-sense						req="02.77" cost="5"/>
+      <fearlessness				min="1" max="4" mean="1.5" sdev="1.4" costs="2"/>
+      <fit						min="1" max="2" mean="1" sdev=".45" costs="5, 15"/>
+      <hard-to-kill				min="1" max="4" mean="1.5" sdev="1.4" costs="5"/>
+      <hard-to-read				min="1" max="2" mean="1.1" sdev="1.1" costs="5"/>
+      <higher-purpose						req="02" cost="5"/>
+      <high-pain-threshold				req="02.63" cost="10"/>
+      <honest-face								    cost="1"/>
+      <hyper-reflexes						req="01.33" cost="15"/>
+      <intuition									 cost="15"/>
+      <iron-hand					min="1" max="2" mean="1" sdev=".45" req="0.068" costs="10, 15"/>
+      <language-talent			min="1" max="3" mean="1.2" sdev=".8" costs="2"/>
+      <legal-enforcement			min="1" max="3" mean="1.2" sdev=".8" req="03.33" costs="5, 10, 15"/>
+      <legal-immunity				min="1" max="3" mean="1.2" sdev=".8" req="01.11" costs="5, 10, 20"/>
+      <lightning-calculator				req="02.56" cost="5"/>
+      <literacy					req="-1" cost="10"/>
+      <longevity							req="-1" cost="5"/>
+      <luck						min="1" max="2" mean="1" sdev=".45" req="01.25" costs="15, 30"/>
+      <magery						min="0" max="2" req="-1" costs="5, 15, 25, 35, 50, 65" zeromin="1"/>
+      <magic-resistance			min="1" max="4" req="01" costs="2"/>
+      <marksman							req="00.71" cost="30"/>
+      <math-ability						req="01.91" cost="10"/>
+      <medium								req="00.31" cost="10"/>
+      <music-ability				min="1" max="3" costs="1"/>
+      <night-vision							    cost="10"/>
+      <paramilitary-rank			req="01" min="0" max="4" mean="0.05" sdev="1.4" costs="5"/>
+      <patron						min="1" max="6" mean="2" sdev="1.6" costs="5"/>
+      <perfect-balance					req="01" cost="15"/>
+      <peripheral-vision						    cost="15"/>
+      <photogenic								    cost="3"/>
+      <pious									    cost="5"/>
+      <pitiable								    cost="5"/>
+      <psi-resistance				min="1" max="6" mean="2" sdev="1.6" req="01" costs="2"/>
+      <rank						min="0" max="4" mean="0.05" sdev="1.4" req="04" costs="5"/>
+      <rapid-healing				min="1" max="2" mean="1" sdev=".45" costs="5, 15"/>
+      <reputation					min="1" max="3" mean="1.2" sdev=".8" req="02.5" costs="5"/>
+      <sanctity								    cost="5"/>
+      <single-minded							    cost="5"/>
+      <status						min="1" max="4" mean="1.5" sdev="1.4" costs="5"/>
+      <toughness					min="1" max="2" mean="1" sdev=".45" costs="3"/>
+      <true-faith							req="00.58" cost="15"/>
+      <unfazeable							req="01" cost="15"/>
+      <versatile									  cost="5"/>
+      <voice										  cost="10"/>
+      <wealth						min="1" max="4" mean="1.5" sdev="1.4" req="02" costs="5, 10, 15, 25"/>
+
+      <!-- abby-normal stuff -->
+      <anti-psi-power				costs="3" req="-1"/>
+      <astral-projection-power	costs="3" req="-1"/>
+      <beast-possession			cost="20" req="-1"/>
+      <damage-resistance			min="1" max="8" mean="4.3" req="-1" costs="3"/>
+      <electrokinesis-power		costs="5" req="-1"/>
+      <elastic-skin				cost="20" req="-1"/>
+      <esp-power					costs="3" req="-1"/>
+      <extended-lifespan			req="-1" cost="2"/>
+      <extra-encumbrance			req="-1" cost="10"/>
+      <facial-tentacles			min="3" max="8" mean="4.6" req="-1" cost="10"/>
+      <healing-power				costs="3" req="-1"/>
+      <hyper-strength				req="-1" cost="30"/>
+      <immunity-to-disease		req="-1" cost="10"/>
+      <immunity-to-poison			req="-1" cost="15"/>
+      <impaling-resistance		min="2" max="2" req="-1" costs="5"/>
+      <invulnerability-mind-control	req="-1" cost="15"/>
+      <passive-defense			min="1" max="2" req="-1" costs="25"/>
+      <power-investiture			min="1" max="2" req="-1" costs="10"/>
+      <psychic-vampirism-power	costs="3" req="-1"/>
+      <psychokinesis-power		costs="5" req="-1"/>
+      <telepathy-power			costs="5" req="-1"/>
+      <telepathy-power			costs="5" req="-1"/>
+      <teleportation-power		costs="5" req="-1"/>
+      <trained-by-master			min="1" max="2" req="-1" costs="20"/>
+    </advantages>
+
+    <disadvantages					min="1" max="4" mean="2.02" sdev="0.95">
+      <absent-mindedness						    cost="-15"/>
+      <addiction					min="-4" max="-1" mean="-2" sdev="1.7" costs="-5"/>
+      <albinism							req="00.06" cost="-10"/>
+      <alcoholism					min="-1" max="-1" costs="-15, -20"/>
+      <bad-back					min="-2" max="-1" costs="-15, -25"/>
+      <bad-smell									cost="-10"/>
+      <bad-temper								    cost="-10"/>
+      <berserk								    cost="-15"/>
+      <blind								req="00.12" cost="-50"/>
+      <blood-lust								    cost="-10"/>
+      <bowlegged								    cost="-1"/>
+      <bully									    cost="-10"/>
+      <callous								    cost="-6"/>
+      <careful								    cost="-1"/>
+      <charitable								    cost="-15"/>
+      <chronic-pain				min="-3" max="-1" mean="-1.15" sdev="1.3" costs="-5"/>
+      <clueless								    cost="-10"/>
+      <code-of-honor				min="-3" max="-1" costs="-5"/>
+      <code-of-honor-bushido		min="-3" max="-3" req="01" costs="-5"/>
+      <code-of-honor-hospitality	min="-1" max="-1" req="02.5" costs="-5"/>
+      <color-blindness						    cost="-10"/>
+      <combat-paralysis						    cost="-15"/>
+      <compulsive-behavior		min="-3" max="-1" mean="1.1" sdev="1" costs="-5"/>
+      <compulsive-carousing		min="-2" max="-1" costs="-5"/>
+      <compulsive-lying						    cost="-15"/>
+      <compulsive-spending					    cost="-5"/>
+      <compulsive-gambling					    cost="-5"/>
+      <compulsive-preening					    cost="-5"/>
+      <compulsive-wackiness		min="-2" max="-1" costs="-5"/>
+      <confused								    cost="-10"/>
+      <cowardice								    cost="-10"/>
+      <curious					min="-2" max="-1" costs="-5"/>
+      <cursed								req="00.08" cost="-75"/>
+      <deafness							req="00.1" cost="-20"/>
+      <delicate-metabolism		min="-2" max="-1" costs="-20"/>
+      <delusions					min="-4" max="-1" mean="-1.2" sdev="1.4" costs="-1, -5, -10, -15"/>
+      <delusions-vision-board		min="-2" max="-1" mean="-1.1" sdev="1" costs="-5"/>
+      <disciplines-of-faith	min="-3" max="-1" mean="-1" sdev="0.9" costs="-5"/>
+      <disturbing-voice						    cost="-10"/>
+      <dreamer									cost="-1"/>
+      <dull									    cost="-1"/>
+      <dwarfism					  		req="00.31" cost="-15"/>
+      <dyslexia					min="-2" max="-1" costs="-5, -15"/>
+      <easy-to-read							    cost="-10"/>
+      <edgy									    cost="-5"/>
+      <enemy						min="-4" max="-1" costs="-5"/>
+      <epilepsy							req="00.6" cost="-30"/>
+      <eunuch								req="00.5" cost="-5"/>
+      <facial-paralysis			min="-3" max="-1" mean="-1.2" sdev="1.2" req="0.4" costs="-5"/>
+      <fanaticism					min="-2" max="-1" costs="-5, -15"/>
+      <fat						min="-2" max="-1" req="05" costs="-10"/>
+      <flat-affect								cost="-5"/>
+      <frightens-animals						    cost="-10"/>
+      <gigantism							req="00.08" cost="-10"/>
+      <glory-hound							    cost="-15"/>
+      <gluttony								    cost="-5"/>
+      <greed									    cost="-15"/>
+      <gregarious								    cost="-10"/>
+      <guilt-complex							    cost="-5"/>
+      <gullibility							    cost="-10"/>
+      <hemophilia							req="00.09" cost="-30"/>
+      <honesty								    cost="-10"/>
+      <illiteracy					  		req="01" cost="-10"/>
+      <impulsiveness							    cost="-10"/>
+      <innumerate								    cost="-10"/>
+      <intolerance				min="-2" max="-1" costs="-5"/>
+      <intolerance-racial			min="-2" max="-1" mean="-1.4" costs="-5"/>
+      <intolerance-religious		min="-2" max="-1" mean="-1.4" costs="-5"/>
+      <jealousy					  			    cost="-10"/>
+      <kleptomania				  				cost="-15"/>
+      <klutz						min="-2" max="-1" req="01.4" costs="-5, -15"/>
+      <lame						min="-3" max="0" mean="-.5" sdev="1.1" costs="-1, -15, -25, -35" zeromin="1"/>
+      <laziness					  			    cost="-10"/>
+      <lecherousness				  			    cost="-15"/>
+      <loner						min="-2" max="-1" costs="-5"/>
+      <low-empathy				  			    cost="-15"/>
+      <low-pain-threshold			  			    cost="-10"/>
+      <low-self-image				  			    cost="-10"/>
+      <megalomania							    req="01" cost="-10"/>
+      <miserliness							    cost="-10"/>
+      <motion-sickness						    cost="-10"/>
+      <mute								req="00.13" cost="-25"/>
+      <needy						min="-2" max="-1" costs="-10"/>
+      <night-blindness						    cost="-10"/>
+      <nightmares								    cost="-5"/>
+      <no-sense-of-humor						    cost="-10"/>
+      <nosy									    cost="-2"/>
+      <oblivious								    cost="-3"/>
+      <odious-personal-habit		min="-3" max="-1" mean="-1.6" sdev="1.4" costs="-5"/>
+      <one-arm							req="00.1" cost="-20"/>
+      <one-eye							req="00.33" cost="-15"/>
+      <one-hand							req="00.16" cost="-15"/>
+      <on-the-edge							    cost="-15"/>
+      <overconfidence							    cost="-10"/>
+      <overweight							req="16" cost="-5"/>
+      <pacifism					min="-2" max="-1" costs="-15"/>
+      <pacifism-self-defense		cost="-15" req="0.5"/>
+      <paranoid					min="-2" max="-1" mean="-1" sdev=".6" cost="-10"/>
+      <phobia						min="-3" max="-1" mean="-1.1" sdev="1.7" costs="-5"/>
+      <poverty					min="-3" max="-1" mean="-1" sdev=".8" costs="-5"/>
+      <proud									    cost="-1"/>
+      <pyromania								    cost="-5"/>
+      <reputation					min="-3" max="-1" mean="-1.2" sdev="1" costs="-5"/>
+      <sadism									    cost="-15"/>
+      <secret						min="-4" max="-1" mean="-1.6" sdev="1.4" costs="-5"/>
+      <selfish					min="-2" max="-1" costs="-5, -15"/>
+      <sense-of-duty				min="-4" max="-1" mean="-1.4" sdev="1.6" costs="-5"/>
+      <sense-of-duty-house		min="-3" max="-1" mean="-1.6" sdev="1.7" costs="-5"/>
+      <sense-of-duty-animals		min="-3" max="-2" costs="-5"/>
+      <sense-of-duty-nature		min="-3" max="-2" costs="-5"/>
+      <shy						min="-3" max="-1" mean="-1.1" sdev="1.2" costs="-5"/>
+      <skinny										 cost="-5"/>
+      <social-disease				min="-2" max="-1" costs="-5"/>
+      <social-stigma				min="-4" max="-1" mean="-1.5" sdev="1.8" costs="-5"/>
+      <social-stigma-beast		min="-4" max="-4" req="-1" costs="-5"/>
+      <social-stigma-ex-con		min="-2" max="-2" costs="-5"/>
+      <social-stigma-excommunicated	min="-2" max="-2" costs="-5"/>
+      <solipsist							req="00.15" cost="-10"/>
+      <stocky						min="-1" max="-1" costs="-5"/>
+      <stubborn								    cost="-5"/>
+      <stuttering								    cost="-10"/>
+      <superstitious				min="-2" max="-1" mean="-1" costs="-5"/>
+      <trademark					min="-3" max="-1" costs="-5"/>
+      <truthfulness							    cost="-5"/>
+      <ugly						min="-2" max="-1" req="08.33" mean="-1" sdev=".8" costs="-5"/>
+      <unfit						min="-2" max="-1" mean="-1" sdev=".7" costs="-5, -15"/>
+      <unluckiness							    cost="-10"/>
+      <vow						min="-4" max="-1" costs="-5"/>
+      <vow-celibacy				min="-1" max="-1" costs="-5"/>
+      <weak-immune-system					req="01.85" cost="-30"/>
+      <weirdness-magnet							cost="-15"/>
+      <xenophobia								    cost="-15"/>
+      <youth						min="-3" max="-1" mean="-1.2" sdev="1" costs="-2"/>
+
+      <!-- abby-normal stuff -->
+      <astral-entity				req="-1" cost="-10"/>
+      <code-of-honor-elf			min="-3" max="-1" req="-1" costs="-5"/>
+      <code-of-honor-royalty		min="-4" max="-1" costs="-5"/>
+      <dependency-energy			req="-1" cost="-10"/>
+      <fragile					req="-1" cost="-20"/>
+      <monstrous-appearance		req="-1" cost="-20"/>
+      <pantheon-outcast			req="-1" cost="-15"/>
+      <paralysis					min="-3" max="-1" mean="-1" req="-1" costs="-10"/>
+      <reprogrammable-duty		req="-1" cost="-25"/>
+      <sense-of-duty-elària		min="-3" max="-1" req="-1" mean="-1" costs="-5"/>
+      <sense-of-duty-tribe		min="-3" max="-1" req="-1" mean="-1" costs="-5"/>
+      <slave-mentality			req="-1" cost="-40"/>
+      <unhealing					req="-1" cost="-20"/>
+      <unliving					req="-1" cost="-50"/>
+      <vulnerability-cold			req="-1" cost="-10"/>
+      <vulnerability-fire			req="-1" cost="-10"/>
+    </disadvantages>
+
+    <quirk-verbs					min="0" max="6" mean="3.2" sdev="1.4">
+      <abhors/>
+      <abhors_people_that_hate/>
+      <abhors_people_that_like/>
+      <abhors_the_mention_of/>
+      <accepts/>
+      <accepts_that_people_love/>
+      <addicted_to/>
+      <adores/>
+      <advocate_of/>
+      <afraid_of/>
+      <agitated_by/>
+      <allergic_to/>
+      <always_brags_about/>
+      <always_lies_about/>
+      <amused_by/>
+      <appreciates/>
+      <appreciates_those_who_know_about/>
+      <approves_of/>
+      <attracted_to/>
+      <avoids/>
+      <avoids_discussion_about/>
+      <avoids_generalizing/>
+      <avoids_learning_about/>
+      <avoids_stereotyping/>
+      <avoids_studying/>
+      <avoids_talking_about/>
+      <barely_tolerates/>
+      <believes_in/>
+      <belittles/>
+      <big_fan_of/>
+      <bitter_about/>
+      <cannot_lie_about/>
+      <collects_trivia_on/>
+      <concerned_with/>
+      <condemns/>
+      <confounded_by/>
+      <crazy_about/>
+      <deathly_afraid_of/>
+      <despises/>
+      <detests/>
+      <disgusted_by/>
+      <dislikes/>
+      <dislikes_talking_about/>
+      <dismisses/>
+      <dismisses_the_topic_of/>
+      <disregards/>
+      <disregards_discussion_of/>
+      <distrusts/>
+      <disturbed_by/>
+      <does_not_like/>
+      <easily_amused_by/>
+      <enjoys/>
+      <enjoys_learning_about/>
+      <enjoys_studying/>
+      <enjoys_talking_about/>
+      <enjoys_the_topic_of/>
+      <entertained_by/>
+      <fancies/>
+      <fascinated_by/>
+      <fears/>
+      <fears_the_topic_of/>
+      <feels_incompetent_about/>
+      <fixated_on/>
+      <frustrated_by/>
+      <generalizes/>
+      <hates/>
+      <horrified_by/>
+      <impatient_with/>
+      <in_favor_of/>
+      <indifferent_about/>
+      <indulges_in/>
+      <infatuated_with/>
+      <insensitive_about/>
+      <irrational_fear_of/>
+      <is_forgiving_of/>
+      <lies_about/>
+      <likes/>
+      <loathes/>
+      <loves/>
+      <mildly_allergic_to/>
+      <mortified_by/>
+      <nauseated_by/>
+      <neglectful_of/>
+      <nervous_around/>
+      <never_lies_about/>
+      <not_terribly_fond_of/>
+      <obsessed_with/>
+      <opposed_to/>
+      <overvalues/>
+      <paranoid_about/>
+      <patient_with/>
+      <perturbed_by/>
+      <petrified_by/>
+      <prefers/>
+      <preoccupied_with/>
+      <puzzled_by/>
+      <really_afraid_of/>
+      <really_attracted_to/>
+      <really_crazy_about/>
+      <really_disgusted_by/>
+      <really_dislikes/>
+      <really_hates/>
+      <really_into/>
+      <really_obsessed_with/>
+      <really_preoccupied_with/>
+      <really_sensitive_about/>
+      <really_terrified_of/>
+      <rejects/>
+      <relaxed_around/>
+      <repelled_by/>
+      <restless_around/>
+      <revolted_by/>
+      <ridicules/>
+      <ridicules_those_afraid_of/>
+      <ridicules_those_into/>
+      <ridicules_those_who_dislike/>
+      <ridicules_those_who_love/>
+      <ridicules_those_who_worship/>
+      <scoffs_at/>
+      <scorns/>
+      <sensitive_about/>
+      <sickened_by/>
+      <squirrelly_around/>
+      <stereotypes/>
+      <stupified_by/>
+      <painfully_superstitious_about/>
+      <really_superstitious_about/>
+      <superstitious_about/>
+      <talks_about/>
+      <terrified_of/>
+      <thinks_they_are_allergic_to/>
+      <thinks_they_hate/>
+      <thinks_they_like/>
+      <thinks_they_love/>
+      <tolerates/>
+      <tries_to_accept/>
+      <tries_to_avoid/>
+      <tries_to_fathom/>
+      <tries_to_like/>
+      <tries_to_love/>
+      <tries_to_make_sense_of/>
+      <tries_to_talk_about/>
+      <tries_to_tolerate/>
+      <tries_to_understand/>
+      <uncomfortable_around/>
+      <undervalues/>
+      <uneasy_around/>
+      <violently_opposes/>
+      <violently_opposes_mention_of/>
+      <wants_to_accept/>
+      <wants_to_forget/>
+      <wants_to_hate/>
+      <wants_to_like/>
+      <wants_to_love/>
+      <wants_to_reject/>
+      <wary_of/>
+      <will_not_lie_about/>
+      <worships/>
+    </quirk-verbs>
+    <quirk-nouns					min="6" max="8" mean="7">
+      <expired_food/>
+      <rotten_food/>
+      <the_innocent/>
+      <parenting/>
+      <good_parenting/>
+      <bad_parenting/>
+      <barren_women/>
+      <academia/>
+      <academics/>
+      <acne/>
+      <acne_scars/>
+      <allergic_people/>
+      <alcohol/>
+      <amputees/>
+      <anarchy/>
+      <astrology/>
+      <astronomy/>
+      <infant_mortality/>
+      <dead_cats/>
+      <dead_dogs/>
+      <fat_cats/>
+      <fat_dogs/>
+      <babies/>
+      <badgers/>
+      <bad_jokes/>
+      <baked_beans/>
+      <bare_feet/>
+      <grizzly_bears/>
+      <bears/>
+      <beautiful_women/>
+      <beef/>
+      <rare_beef/>
+      <beef_jerky/>
+      <beer/>
+      <bees/>
+      <beggars/>
+      <being_called_an_addict/>
+      <being_called_a_flirt/>
+      <being_called_a_gossip/>
+      <being_called_a_know-it-all/>
+      <being_called_bitter/>
+      <being_called_chicken/>
+      <being_called_clueless/>
+      <being_called_cowardly/>
+      <being_called_cute/>
+      <being_called_envious/>
+      <being_called_fat/>
+      <being_called_greedy/>
+      <being_called_intolerant/>
+      <being_called_jealous/>
+      <being_called_lazy/>
+      <being_called_negative/>
+      <being_called_obsessive/>
+      <being_called_petty/>
+      <being_called_poor/>
+      <being_called_pretty/>
+      <being_called_promiscuous/>
+      <being_called_selfish/>
+      <being_called_sensitive/>
+      <being_called_stupid/>
+      <being_called_skinny/>
+      <being_called_ugly/>
+      <being_called_unforgiving/>
+      <birds/>
+      <baby_birds/>
+      <baby_ducks/>
+      <ducks/>
+      <black_clothes/>
+      <blondes/>
+      <body_hair/>
+      <body_piercings/>
+      <bondage/>
+      <bones/>
+      <books/>
+      <boss/>
+      <brother/>
+      <brunettes/>
+      <bugs/>
+      <burn_victims/>
+      <butter/>
+      <butterflies/>
+      <capital_punishment/>
+      <cartoons/>
+      <cats/>
+      <exotic_cats/>
+      <celebrities/>
+      <celibacy/>
+      <cheese/>
+      <cheese_burgers/>
+      <chicken/>
+      <chocolate/>
+      <dark_chocolate/>
+      <white_chocolate/>
+      <circus_performers/>
+      <clergymen/>
+      <clowns/>
+      <coke/>
+      <cold_food/>
+      <comedians/>
+      <commercials/>
+      <cons/>
+      <con_artists/>
+      <confession/>
+      <conformity/>
+      <cooking/>
+      <corporal_punishment/>
+      <corpses/>
+      <cowards/>
+      <cows/>
+      <baby_cows/>
+      <coffins/>
+      <creationism/>
+      <cremation/>
+      <crickets/>
+      <crooked_teeth/>
+      <crowds/>
+      <perfect_teeth/>
+      <dancing/>
+      <dark_poetry/>
+      <dead_fish/>
+      <giant_fish/>
+      <diamonds/>
+      <dinosaurs/>
+      <diplomatic_immunity/>
+      <disorder/>
+      <divorced_people/>
+      <dogs/>
+      <doll_collections/>
+      <dolls/>
+      <dorky_laughs/>
+      <dreams/>
+      <drunks/>
+      <duels/>
+      <earrings/>
+      <easterners/>
+      <education/>
+      <eels/>
+      <elk/>
+      <elk-hunting/>
+      <emeralds/>
+      <emus/>
+      <eschatology/>
+      <euthanasia/>
+      <ex-cons/>
+      <exercise/>
+      <exes/>
+      <ex-friends/>
+      <exotic_hats/>
+      <exotic_plants/>
+      <exotic_men/>
+      <exotic_women/>
+      <expensive_knives/>
+      <expensive_perfumes/>
+      <expensive_rugs/>
+      <ex-wife/>
+      <facial_hair/>
+      <faeries/>
+      <falconry/>
+      <family/>
+      <fashion/>
+      <fat_people/>
+      <fat_pornstars/>
+      <fat_women/>
+      <feet/>
+      <fire/>
+      <flies/>
+      <flying/>
+      <foreign_men/>
+      <foreign_women/>
+      <free_health_care/>
+      <free_verse/>
+      <frogs/>
+      <bull_frogs/>
+      <tree_frogs/>
+      <dead_frogs/>
+      <giant_frogs/>
+      <tiny_frogs/>
+      <fruit/>
+      <giant_fruit/>
+      <exotic_fruit/>
+      <furniture/>
+      <gambling/>
+      <gangrene/>
+      <gardening/>
+      <genocide/>
+      <giant_fruit/>
+      <gossip/>
+      <gourmet_food/>
+      <graffiti/>
+      <grapefruit/>
+      <graveyards/>
+      <greek_food/>
+      <hats/>
+      <stupid_hats/>
+      <hair/>
+      <hairless_pets/>
+      <excessively_happy_people/>
+      <hard_liquour/>
+      <heights/>
+      <herbs/>
+      <higher_education/>
+      <hiking/>
+      <home/>
+      <honey/>
+      <horses/>
+      <hot_weather/>
+      <hugging/>
+      <hygiene/>
+      <in-laws/>
+      <individuality/>
+      <infanticide/>
+      <infidelity/>
+      <insects/>
+      <giant_insects/>
+      <stinging_insects/>
+      <jewelry/>
+      <job/>
+      <jobs/>
+      <kittens/>
+      <knobby_knees/>
+      <leather/>
+      <lesbians/>
+      <lightning_storms/>
+      <long_summers/>
+      <long_stories/>
+      <long_winters/>
+      <loud_music/>
+      <magic/>
+      <math/>
+      <midgets/>
+      <milk/>
+      <minorities/>
+      <monastaries/>
+      <negativity/>
+      <newts/>
+      <poison_newts/>
+      <nose_picking/>
+      <nosy_people/>
+      <nudity/>
+      <nutrition/>
+      <old_friends/>
+      <old_milk/>
+      <old_music/>
+      <old_people/>
+      <organized_religion/>
+      <pagans/>
+      <parents/>
+      <peaceniks/>
+      <philosophy/>
+      <physics/>
+      <pigs/>
+      <miniature_pigs/>
+      <poetry/>
+      <politics/>
+      <practical_jokers/>
+      <practical_jokes/>
+      <pranks/>
+      <pranksters/>
+      <pregnant_women/>
+      <prostitutes/>
+      <dead_prostitutes/>
+      <fat_prostitutes/>
+      <puns/>
+      <rainy_weather/>
+      <rank/>
+      <rare_coins/>
+      <rats/>
+      <red_heads/>
+      <relationships/>
+      <religious_ritual/>
+      <risk_taking/>
+      <royalty/>
+      <salamanders/>
+      <salesmen/>
+      <sandles/>
+      <sarcasm/>
+      <scams/>
+      <scam_artists/>
+      <scars/>
+      <science/>
+      <scorpions/>
+      <ancient_sharks/>
+      <sharks/>
+      <baby_sharks/>
+      <shoes/>
+      <fancy_shoes/>
+      <short_women/>
+      <siamese_twins/>
+      <sick_people/>
+      <silk/>
+      <sister/>
+      <slugs/>
+      <smelly_people/>
+      <snakes/>
+      <giant_snakes/>
+      <poison_snakes/>
+      <puppies/>
+      <soap/>
+      <spicy_food/>
+      <spiders/>
+      <giant_spiders/>
+      <poison_spiders/>
+      <spitting/>
+      <sports/>
+      <sports_trivia/>
+      <status/>
+      <step-dad/>
+      <step-mom/>
+      <step-sister/>
+      <squash/>
+      <mutant_squash/>
+      <giant_squash_fruit/>
+      <psychologically_disturbing_squash/>
+      <swamps/>
+      <tall_tales/>
+      <tattoos/>
+      <teachers/>
+      <technology/>
+      <tomatoes/>
+      <thanatology/>
+      <the_flu/>
+      <the_homeless/>
+      <the_law/>
+      <the_military/>
+      <the_needy/>
+      <the_occult/>
+      <the_outdoors/>
+      <the_spleen/>
+      <their_ancestors/>
+      <their_arms/>
+      <their_belly_button/>
+      <their_body/>
+      <their_breath/>
+      <their_butt/>
+      <their_chest/>
+      <their_clothes/>
+      <their_doctor/>
+      <their_ears/>
+      <their_ethnicity/>
+      <their_eyebrows/>
+      <their_eyes/>
+      <their_feet/>
+      <their_fingers/>
+      <their_hair/>
+      <their_hands/>
+      <their_home/>
+      <their_jewelry/>
+      <their_knees/>
+      <their_legs/>
+      <their_lips/>
+      <their_money/>
+      <their_nose/>
+      <their_parents/>
+      <their_patron/>
+      <their_pets/>
+      <their_possessions/>
+      <their_reputation/>
+      <their_shoes/>
+      <their_siblings/>
+      <their_skin/>
+      <their_status/>
+      <their_stomach/>
+      <their_teeth/>
+      <their_toes/>
+      <their_veins/>
+      <their_vocation/>
+      <things_stuck_in_their_ears/>
+      <things_stuck_in_their_nose/>
+      <tiny_dogs/>
+      <toast/>
+      <tomatoes/>
+      <travel/>
+      <useless_trivia/>
+      <trivia/>
+      <ugly_children/>
+      <ugly_pets/>
+      <ugly_people/>
+      <uniforms/>
+      <unnecessary_rhyming/>
+      <urban_legends/>
+      <urns/>
+      <vampires/>
+      <vegetarians/>
+      <velvet/>
+      <verbal_sparring/>
+      <war_mongers/>
+      <warts/>
+      <wealthy_men/>
+      <weight_issues/>
+      <weird_drinks/>
+      <westerners/>
+      <work/>
+      <expensive_wine/>
+      <wine/>
+      <cheap_wine/>
+      <violence/>
+      <virgins/>
+
+      <affirmative_action/>
+      <alternative_medicine/>
+      <alternative_music/>
+      <B_movies/>
+      <board_games/>
+      <Bob_Barker/>
+      <breakfast_cereals/>
+      <computer_games/>
+      <computers/>
+      <doctors/>
+      <epic_movies/>
+      <fashion_magazines/>
+      <fast_cars/>
+      <fireworks/>
+      <game_shows/>
+      <golf/>
+      <gun_control/>
+      <homemade_bombs/>
+      <homeopathic_drugs/>
+      <horror_movies/>
+      <Keanu_Reeves/>
+      <lasers/>
+      <monster_trucks/>
+      <motivational_speakers/>
+      <motorcycles/>
+      <obituaries/>
+      <Oprah/>
+      <personality_tests/>
+      <pop_music/>
+      <pop_psychology/>
+      <pornography/>
+      <reality_television/>
+      <recreational_drugs/>
+      <rockets/>
+      <roleplaying_games/>
+      <romance_novels/>
+      <sasquach/>
+      <sitcoms/>
+      <sleep_disorders/>
+      <stamps/>
+      <talk_shows/>
+      <UFOs/>
+      <velcro/>
+    </quirk-nouns>
+
+    <skills							min="7" max="30" mean="14" sdev="3.8">
+      <skill name="area-knowledge" spec="village" max="2" mean="-0.4"/>
+      <skill name="area-knowledge" spec="city" max="2" mean="-0.4"/>
+      <skill name="area-knowledge" spec="nation" max="2" mean="-0.4"/>
+
+      <skill name="armory" spec="armor" max="2" mean="-0.4" req="01"/>
+      <skill name="armory" spec="melee-weapons" max="2" mean="-0.4" req="01"/>
+      <skill name="armory" spec="missile-weapons" max="2" mean="-0.4" req="01"/>
+      <skill name="armory" spec="small-arms" max="2" mean="-0.4"/>
+      <skill name="armory" spec="heavy-weapons" max="2" mean="-0.4" req="01"/>
+
+      <skill name="artist" spec="drawing" max="2" mean="0.4"/>
+      <skill name="artist" spec="painting" max="2" mean="0.4"/>
+      <skill name="artist" spec="sculpting" max="2" mean="0.4"/>
+
+      <acrobatics					max="1" mean="-0.4"/>
+      <acting						max="2" mean="-0.4"/>
+      <administration				max="2" mean="-0.4"/>
+      <agronomy					max="2" mean="-0.4"/>
+      <alchemy					max="1" req="0.5" mean="-0.4"/>
+      <animal-handling			max="1" mean="-0.4"/>
+      <archaeology				max="2" mean="-0.4"/>
+      <architecture				max="2" mean="-0.4"/>
+      <autohypnosis				max="2" mean="-0.4"/>
+      <astronomy					max="2" mean="-0.4"/>
+      <axe-mace					max="2" mean="-0.4"/>
+      <axe-throwing				max="2" mean="-0.4"/>
+      <public-speaking						max="2" mean="-0.4"/>
+      <biochemistry				max="1" mean="-0.4"/>
+      <boating					max="2" mean="-0.4"/>
+      <bow						max="1" mean="-0.4"/>
+      <boxing						max="1" mean="-0.4"/>
+      <brawling					max="2" mean="-0.4"/>
+      <breath-control				max="1" mean="-0.4"/>
+      <broad-sword				max="2" mean="-0.4"/>
+      <calligraphy				max="2" mean="-0.4"/>
+      <camouflage					max="2" mean="-0.4"/>
+      <carousing					max="2" mean="-0.4"/>
+      <carpentry					max="2" mean="-0.4"/>
+      <chemistry					max="1" mean="-0.4"/>
+      <computer-operation			max="2" mean="-0.4"/>
+      <computer-programming		max="1" mean="-0.4"/>
+
+      <skill name="connoisseur" spec="art"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="couture"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="cuisine"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="dance"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="literature"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="music"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="poetry"	max="2" mean="-0.4"/>
+      <skill name="connoisseur" spec="wine"	max="2" mean="-0.4"/>
+
+      <cooking					max="2" mean="-0.4"/>
+      <climbing					max="2" mean="-0.4"/>
+      <crossbow					max="2" mean="-0.4"/>
+      <cryptanalysis				max="1" req="0.76" mean="-0.4"/>
+      <cryptography				max="1" req="0.76" mean="-0.4"/>
+      <cryptology					max="1" req="0.76" mean="-0.4"/>
+      <dancing					max="2" mean="-0.4"/>
+      <demolitions				max="2" mean="-0.4"/>
+      <detect-lies				max="1" mean="-0.4"/>
+      <diagnosis					max="1" mean="-0.4"/>
+      <diplomacy					max="1" mean="-0.4"/>
+      <disguise					max="2" mean="-0.4"/>
+      <skill name="driving" spec="car"	max="2" mean="-0.4"/>
+      <skill name="driving" spec="motorcycle"	max="2" mean="-0.4"/>
+      <skill name="driving" spec="big-rig"	max="2" mean="-0.4"/>
+      <skill name="electronics" spec="comms"			max="2" mean="-0.4"/>
+      <skill name="electronics" spec="security"		max="2" mean="-0.4"/>
+      <skill name="engineering" spec="mechanical"		max="1" mean="-0.4"/>
+      <escape						max="2" mean="-0.4"/>
+      <falconry					max="2" mean="-0.4"/>
+      <farming					max="2" mean="-0.4"/>
+      <skill name="fast-draw" spec="knife"			max="2" mean="-0.4"/>
+      <skill name="fast-draw" spec="pistol"			max="2" mean="-0.4"/>
+      <skill name="fast-draw" spec="smg"				max="2" req="01.17" mean="-0.4"/>
+      <skill name="fast-draw" spec="clip"				max="2" req="01.65" mean="-0.4"/>
+      <fast-talk					max="2" mean="-0.4"/>
+      <fencing					max="2" mean="-0.4"/>
+      <first-aid					max="2" mean="-0.4"/>
+      <fishing					max="2" mean="-0.4"/>
+      <forensics					max="2" mean="-0.4"/>
+      <forgery					max="2" mean="-0.4"/>
+      <gambling					max="2" mean="-0.4"/>
+      <gesture					max="2" mean="-0.4"/>
+      <skill name="guns" spec="light-auto"			max="2" mean="-0.4"/>
+      <skill name="guns" spec="machine-pistol"		max="2" mean="-0.4"/>
+      <skill name="guns" spec="pistol"				max="2" mean="-0.4"/>
+      <skill name="guns" spec="rifle"					max="2" mean="-0.4"/>
+      <skill name="guns" spec="shotgun"				max="2" mean="-0.4"/>
+      <history					max="1" mean="-0.4"/>
+      <hold-out					max="2" mean="-0.4"/>
+
+      <skill  name="hobby" spec="birding"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="camping"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="caving"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="gardening"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="hiking"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="jogging"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="juggling"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="kite-flying"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="needlework"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="origami"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="puppetry"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="roleplaying"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="snorkling"			min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="trivia"				min="-1" mean="0" max="2"/>
+      <skill  name="hobby" spec="whittling"			min="-1" mean="0" max="2"/>
+
+      <hypnotism					max="1" mean="-0.4"/>
+      <interrogation				max="2" mean="-0.4"/>
+      <intimidation				max="2" mean="-0.4"/>
+      <jeweler					max="2" mean="-0.4"/>
+      <judo						max="1" mean="-0.4"/>
+      <karate						max="1" mean="-0.4"/>
+      <knife						max="2" mean="-0.4"/>
+      <language-chinese			max="-1" req="01.26" mean="-2.4" min="-4"/>
+      <language-dutch				max="-1" req="02.76" mean="-2.4" min="-4"/>
+      <language-french			max="-1" req="04" mean="-2.4" min="-4"/>
+      <language-german			max="-1" req="04" mean="-2.4" min="-4"/>
+      <language-italian			max="-1" req="03" mean="-2.4" min="-4"/>
+      <language-japanese			max="-1" req="01" mean="-2.4" min="-4"/>
+      <language-portuguese		max="-1" req="01.76" mean="-2.4" min="-4"/>
+      <language-russian			max="-1" req="01.36" mean="-2.4" min="-4"/>
+      <language-spanish			max="-1" req="04.1" mean="-2.4" min="-4"/>
+      <skill name="law" spec="criminal"		max="2" mean="-0.4"/>
+      <skill name="law" spec="civil"			max="2" mean="-0.4"/>
+      <skill name="law" spec="martial"		max="2" mean="-0.4"/>
+      <skill name="law" spec="contractual"	max="2" mean="-0.4"/>
+      <leadership					max="2" mean="-0.4"/>
+      <linguistics				max="1" mean="-0.4"/>
+      <lip-reading				max="2" mean="-0.4"/>
+      <literature					max="1" mean="-0.4"/>
+      <lockpicking				max="2" mean="-0.4"/>
+      <mathematics				max="1" mean="-0.4"/>
+      <mechanic					max="2" mean="-0.4"/>
+      <meditation					max="1" mean="-0.4"/>
+      <merchant					max="2" mean="-0.4"/>
+      <metallurgy					max="1" mean="-0.4"/>
+
+      <skill name="musical-instrument" spec="strings"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="woodwind"			max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="brass"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="drums"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="guitar"				max="1" mean="-0.4"/>
+      <skill name="musical-instrument" spec="piano"				max="1" mean="-0.4"/>
+
+      <naturalist					max="1" mean="-0.4"/>
+      <navigation					max="2" mean="-0.4"/>
+      <occultism					max="2" mean="-0.4"/>
+      <packing					max="2" mean="-0.4"/>
+      <panhandling				max="2" mean="-0.4"/>
+      <parachuting				max="2" mean="-0.4"/>
+      <performance				max="2" mean="-0.4"/>
+      <philosophy					max="1" mean="-0.4"/>
+      <photography				max="2" mean="-0.4"/>
+      <physician					max="1" mean="-0.4"/>
+      <pick-pocket				max="1" mean="-0.4"/>
+      <piloting					max="1" mean="-0.4"/>
+      <poetry						max="2" mean="-0.4"/>
+      <poisons					max="2" mean="-0.4"/>
+      <pottery					max="2" mean="-0.4"/>
+      <research					max="2" mean="-0.4"/>
+      <riding						max="2" mean="-0.4"/>
+      <ritual-magic				max="2" req="-1" mean="-0.4"/>
+      <savoir-faire				max="2" mean="-0.4"/>
+      <scrounging					max="2" mean="-0.4"/>
+      <scuba						max="2" mean="-0.4"/>
+      <sculpting					max="2" mean="-0.4"/>
+      <sex-appeal					max="2" mean="-0.4"/>
+      <shadowing					max="2" mean="-0.4"/>
+      <short-sword				max="2" mean="-0.4"/>
+      <singing					max="2" mean="-0.4"/>
+      <skating					max="1" mean="-0.4"/>
+      <skiing						max="1" mean="-0.4"/>
+      <sleight-of-hand			max="1" mean="-0.4"/>
+      <sling						max="1" mean="-0.4"/>
+      <skill name="speed-load" spec="pistol"			max="2" req="01.9"  mean="-0.4"/>
+      <skill name="speed-load" spec="smg"				max="2" req="01" mean="-0.4"/>
+      <skill name="speed-load" spec="rifle"			max="2" req="01" mean="-0.4"/>
+      <sports						max="2" mean="-0.4"/>
+      <staff						max="1" mean="-0.4"/>
+      <stealth					max="2" mean="-0.4"/>
+      <strategy					max="1" mean="-0.4"/>
+      <streetwise					max="2" mean="-0.4"/>
+      <surgery					max="1" mean="-0.4"/>
+
+      <skill name="survival" spec="arctic"			max="1" mean="-0.4"/>
+      <skill name="survival" spec="desert"			max="1" mean="-0.4"/>
+      <skill name="survival" spec="jungle"			max="1" mean="-0.4"/>
+      <skill name="survival" spec="woodlands"			max="2" mean="-0.4"/>
+      <skill name="survival" spec="plains"			max="2" mean="-0.4"/>
+
+      <swimming					max="2" mean="-0.4"/>
+      <tactics					max="1" mean="-0.4"/>
+      <teaching					max="2" mean="-0.4"/>
+      <theology					max="1" mean="-0.4"/>
+      <throwing					max="1" mean="-0.4"/>
+      <tracking					max="2" mean="-0.4"/>
+      <traps						max="2" mean="-0.4"/>
+      <two-hand-axe-mace			max="2" mean="-0.4"/>
+      <veterinary					max="1" mean="-0.4"/>
+      <whip						max="2" mean="-0.4"/>
+      <wood-working				max="2" mean="-0.4"/>
+      <writing					max="2" mean="-0.4"/>
+      <zoology					max="1" mean="-0.4"/>
+    </skills>
+
+    <weapons>
+      <rope req="03.5"/>
+      <firstaid req="06"/>
+      <backpack req="06"/>
+      <handcuffs req="01"/>
+      <flashb req="01"/>
+      <radioh req="02"/>
+      <flashlight req="05"/>
+      <hflashlight req="02.1"/>
+      <nylonc req="02"/>
+      <rflare req="02"/>
+      <binoculars req="01"/>
+      <camera req="03.6"/>
+      <cphone req="01"/>
+      <sphone req="10"/>
+      <sphonec req="09"/>
+      <sphoneck req="52"/>
+      <sphonet req="12"/>
+    </weapons>
+  </class>
+
+  <class abstract="1" alias="yrislamcitz" parent="yrgc" name="Islamic citizen  - Abstract" nationality="Human"
+    eyes="golden, black"
+    hair="golden, black"
+  >
+
+    <skills>
+      <language-arabic req="90" mean="-0.4"/>
+      <language-anglish  req="25" mean="-0.4"/>
+    </skills>
+
+    <weapons	 min="0" max="2" mean="1">
+      <basword/>
+      <baswordt/>
+      <baxe/>
+      <bsword/>
+      <bswordt/>
+      <bswordtf/>
+      <bswordtfire req="01.5"/>
+      <cbow/>
+      <cbows/>
+      <claymore/>
+      <clubl/>
+      <cmbow/>
+      <csbow/>
+      <cutlass/>
+      <darkblade/>
+      <dcbow/>
+      <dwaxe/>
+      <elsword/>
+      <falchion/>
+      <flamberge/>
+      <flail/>
+      <gaxe/>
+      <gdart/>
+      <glaive/>
+      <ghammer/>
+      <gsword/>
+      <gswords req="0.3"/>
+      <halberd/>
+      <hatch/>
+      <hspear/>
+      <istaff req="0.6"/>
+      <javelin/>
+      <kabow req="0.1"/>
+      <latknife/>
+      <lbow/>
+      <lcbow/>
+      <laknife/>
+      <lspear/>
+      <lsword/>
+      <lswordf/>
+      <lswords req="0.1"/>
+      <macef/>
+      <maceh/>
+      <mangosh/>
+      <maul/>
+      <mstar/>
+      <opick/>
+      <pcbow/>
+      <pick/>
+      <pike/>
+      <poison/>
+      <potion req="05"/>
+      <rapier/>
+      <srapier/>
+      <saber/>
+      <satknife/>
+      <sbow/>
+      <scimitar/>
+      <sclub/>
+      <sknife/>
+      <sling/>
+      <smsword/>
+      <spear/>
+      <ssword/>
+      <sswordf/>
+      <sswordp/>
+      <sswords req="0.9"/>
+      <staff/>
+      <taxe/>
+      <trident/>
+      <wh/>
+      <whip/>
+    </weapons>
+  </class>
+
+  <class alias="yrwaziguy" parents="yrgc, itma, yrislamcitz" name="Wazifi guy" nationality="Human">
+
+  </class>
+
+
+
+</classes>

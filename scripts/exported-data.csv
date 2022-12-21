@@ -1,0 +1,114 @@
+id,name,weight,cost
+ballshield,Ballistic Shield,9,
+cboots,Combat boots,2.5,
+gphelmet,Gentex PASGT Helmet,3,
+sgloves,Shooting Gloves,0,
+vest-hardcorps,Second Chance HardCorps,6,
+vest-standard,Second Chance Standard,2.5,
+coat,Sports Coat,2,
+flak,Flak Jacket,12,
+rhelmet,Riot Helmet,3,
+sboots,Steel-toed boots,3,
+mboots,Motorcycle boots,4.5,
+mono-vest,Monocrys Vest,4,
+hmono-vest,Heavy Monocrys Vest,7,
+light-mono,Light Monocrys Suit,7,
+mono,Monocrys Suit,12,
+heavy-mono,Heavy Monocrys Suit,16,
+dvest,Durasteel Vest,18,
+comb-dress,Combat Infantry Dress,35,
+comb-helm,Combat Infantry Helmet,8,
+uhelmet,US Army M1 Helmet,4,
+ghelmet,German M1935 Helmet,5,
+flakw,Flak Jacket,12,
+cvest,Tactical Assault Vest,3,
+cbootsw,Combat boots,2.5,
+overcoatw,Overcoat,10,
+ljacketw,Leather Jacket,4,
+ltrench,Leather Trenchcoat,6.5,
+fjacketw,Flight Jacket,5,
+wcloth,Winter Clothing,3,
+flhelm,Flight Helmet,1.5,
+thelm,Tanker Helmet,1.5,
+lglovesw,Leather Gloves,.5,
+slshoes,Soft Leather Shoes,0.5,40
+slboots,Soft Leather Boots,1.5,70
+lboots,Leather Boots,2.5,80
+hlboots,Hard Leather Boots,3.5,85
+sollerets,Sollerets,7,150
+eboots,Elven boots,2,400
+sbracers,Steel Bracers,4,110
+bracersd,Bracers of defense,4,"5,000"
+spbracers,Spiked Bracers,3,95
+shplates,Shoulder Plates,7.5,130
+thplates,Thigh Plates,8,125
+cgloves,Cloth Gloves,0,15
+lgloves,Leather Gloves,.5,30
+gauntlets,Gauntlets,2,100
+ocesti,Orcish Cesti,1.4,45
+ljacket,Leather Jacket,4,25
+llvest,Light Leather Vest,8,30
+lvest,Leather Vest,10,35
+hlvest,Hardened Leather Vest,13,45
+slvest,Studded Leather Vest,14,60
+lcvest,Light Chain Mail Vest,16.5,200
+hcvest,Heavy Chain Mail Vest,18,250
+hrmvest,Heavy Ring Mail Vest,19,280
+hscvest,Heavy Scale Vest,22,300
+mcshirt,Mithril Chain Shirt,15,"3,000"
+brigv,Brigandine Vest,24,420
+bplate,Breastplate,28,900
+hcorse,Heavy Corselet,45,"2,000"
+overcoat,Overcoat,10,35
+cloth,Cloth Armor,14,45
+pad,Padded Armor,18,120
+lleather,Light Leather Armor,17,160
+leather,Leather Armor,20,300
+hleather,Hardened Leather Armor,28,400
+sleather,Studded Leather Armor,32,450
+bone,Bone Armor,34,200
+leatherl,Leather Lamellar Armor,38,650
+lchain,Light Chain Mail Armor,39,"1,000"
+chain,Chain Mail Armor,45,"1,500"
+rmail,Ring Mail Armor,48,"1,600"
+scale,Scale Mail Armor,52,"1,750"
+brig,Brigandine Armor,54,"1,900"
+metlam,Metal Lamellar Armor,60,"3,000"
+banded,Banded Mail Armor,70,"3,250"
+hplate,Half-Plate Mail Armor,72,"3,900"
+plate,Plate Mail Armor,90,"4,500"
+eplate,Elàrian StealthPlate Armor,76,"132,000"
+fplate,Full Plate Mail Armor,95,"12,000"
+dplate,Dark Plate Armor,92,"250,000"
+mchain,Mithril Chain Armor,45,"12,500"
+mplate,Mithril Plate Armor,90,"95,000"
+ccap,Cloth Cap,.1,5
+lhelm,Leather Helm,1,20
+ccoif,Chain Coif,4,60
+phelm,Pot Helm,5,100
+fhelm,Full Helm,7,250
+ghelm,Great Helm,10,350
+buckler,Buckler,2,20
+esshield,Elàrian Spear Shield,7,75
+msshield,Mithril Small Shield,8,280
+sshield,Small Shield,11,30
+sshields,"Small Shield, Spiked",12.5,35
+mshield,Medium Shield,15,50
+mshields,"Medium Shield, Spiked",17,60
+bshield,Bronze Shield,45,170
+lshield,Large Shield,32,90
+dkshield,Dwarven Kite Shield,26,295
+etshield,Elàrian Tower Shield,42,110
+atshield,Adamantine Tower Shield,34,"1,200"
+cloak,Cloak,4,
+fcloak,Fur Cloak,9,
+srobe,Shamanic Robe,8,250
+ring,Ring,.1,
+ring2,Ring,.1,
+ringp,Ring of Protection,.1,
+broach,Broach,.2,
+necklace,Necklace,.1,
+amulet,Amulet,.5,
+amuletp,Amulet of Power,.5,
+bracelet,Bracelet,.1,
+circlet,Circlet,.5,20

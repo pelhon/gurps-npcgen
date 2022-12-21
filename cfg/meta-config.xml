@@ -2,7 +2,7 @@
 
 <xml-files>
 	<class-file-sets>
-		<files	path-infix="class-data"	file-paths="wwii-psi-classes.xml, game-of-thrones.xml, empiregame-fantasy.xml, standard-cyberpunk.xml, test-classes.xml, standard-classes.xml, standard-martial-arts.xml, standard-wwii-classes.xml, standard-fantasy.xml, mage-fantasy.xml, standard-undead.xml, standard-cabal.xml, exotic-classes.xml, y2kgame-classes.xml, psi-classes.xml"/>
+		<files	path-infix="class-data"	file-paths="wwii-psi-classes.xml, game-of-thrones.xml, empiregame-fantasy.xml, standard-cyberpunk.xml, test-classes.xml, standard-classes.xml, standard-martial-arts.xml, standard-wwii-classes.xml, standard-fantasy.xml, mage-fantasy.xml, standard-undead.xml, standard-cabal.xml, exotic-classes.xml, y2kgame-classes.xml, psi-classes.xml, yrth-test.xml"/>
 	</class-file-sets>
 
 	<attribute-rules	path-infix="class-data"	file-path="attribute-rules.xml"/>
@@ -121,6 +121,19 @@
 		<trans-human	gender="female" type="last"		path-infix="names-data" file-paths="Spanish-last.txt, English-last.txt"/>
 		<trans-human	gender="male"	type="first"	path-infix="names-data" file-paths="Spanish-male-first.txt, English-male-first.txt"/>
 		<trans-human	gender="male"	type="last"		path-infix="names-data" file-paths="Spanish-last.txt, English-last.txt, Germanic-last.txt, Spanish-last.txt"/>
+
+
+		<!-- <yrth- gender="female" type="first" path-infix="names-data" file-paths="" />
+		<yrth- gender="female" type="last" path-infix="names-data" file-paths="" />
+		<yrth- gender="male" type="first" path-infix="names-data" file-paths="" />
+		<yrth- gender="male" type="last" path-infix="names-data" file-paths="" /> -->
+
+		<yrth-test gender="female" type="first" path-infix="names-data" file-paths="Yrth-muslim-female-first.txt" />
+		<yrth-test gender="female" type="last" path-infix="names-data" file-paths="Yrth-muslim-test.txt" />
+		<yrth-test gender="male" type="first" path-infix="names-data" file-paths="Yrth-muslim-male-first.txt" />
+		<yrth-test gender="male" type="last" path-infix="names-data" file-paths="Yrth-muslim-test.txt" />
+
+
 	</nationality-name-file-sets>
 
 </xml-files>
