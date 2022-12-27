@@ -11,7 +11,7 @@
 		<speed				stat="dex/health" costs="20"/> <!-- because, well, you know 20/4 (num inc. of .25 in 1) comes out to cost of 5 per .25 -->
 		<move				stat="dex/health" costs="5"/>
 	</attributes>
-
+ 
 	<skills>
 		<acrobatics			stat="one-eye, dexterity, perfect-balance, gyrobalance" min="-3"/>
 		<acting				stat="shy, low-empathy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
@@ -147,8 +147,6 @@
 		<language-dwarvish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
 		<language-elvish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
 		<language-orcish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
-		<language-arabic			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
-		<language-anglish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
 		<lance				prereqs="riding:-1~1~3"		stat="one-eye, dexterity" min="-2"/>
 		<law				stat="eidetic-memory, intelligence" min="-3"/>
 		<leadership			stat="shy, low-empathy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
@@ -292,7 +290,7 @@
 		<skill name="innate-attack"	spec="projectile"	stat="dexterity" min="-1"/>
 		<thaumatology				stat="magery, eidetic-memory, intelligence" min="-4"/>
 
-		<!-- spells, listed by college (yes, this was very tedious to implement) -->
+		<!-- spells, listed by college (yes, this was very tedious to implement) --> 
 		<!-- fire -->
 		<spell-ignite-fire			prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
 		<spell-create-fire			prereqs="spell-ignite-fire:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
@@ -575,7 +573,7 @@
 		<spell-resurrection				prereqs="spell-instant-regeneration:*12, spell-summon-spirit:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
 		<spell-healing-slumber			prereqs="magery:*2, spell-minor-healing:*12, spell-peaceful-sleep:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
 
-		<!--illusion -->
+		<!--illusion --> 
 		<spell-simple-illusion			prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
 		<spell-complex-illusion			prereqs="spell-sound:*12, spell-simple-illusion:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
 		<spell-perfect-illusion			prereqs="spell-complex-illusion:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
@@ -912,7 +910,7 @@
 		<psi-exoteleport			prereqs="teleportation-power:1~2,3,4,5~8"		stat="intelligence" min="-3"/>
 	</skills>
 
-
+ 
 	<skill-mods>
 		<absolute-direction	skill-mod="3"/>
 		<audio-damping		skill-mod="mult:2"/>

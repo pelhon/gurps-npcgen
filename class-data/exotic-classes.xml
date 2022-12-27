@@ -21,8 +21,6 @@
 		</attributes>
 
 		<advantages						min="0" max="1">
-			<animal-friend				req="-1"/>
-			<animal-empathy				req="-1"/>
 			<awareness					min="1" max="2" req="06"/>
 			<damage-resistance			min="1" max="8" mode="4" mean="3" req="1"/>
 			<enhanced-parry				/>

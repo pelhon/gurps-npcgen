@@ -201,7 +201,7 @@
 			<skill name="guns" spec="shotgun"				req="-1" mean="-0.4"/>
 			<heraldry					max="1" mean="-0.4"/>
 
-			<skill  name="hobby" spec="roleplaying"			req="-1"/>
+			<skill  name="hobby" spec="roleplaying"			req="-1"/> 
 			<skill  name="hobby" spec="hiking"				req="-1"/>
 			<skill  name="hobby" spec="jogging"				req="-1"/>
 			<skill  name="hobby" spec="camping"				req="-1"/>
@@ -533,10 +533,10 @@
 			<reputation							req="1"/>
 		</advantages>
 		<disadvantages					min="0" max="3" mean="1.8">
-			<addiction							min="-1" max="-1" req="29"/>
-			<code-of-honor-hospitality			req="70"/>
+			<addiction							min="-1" max="-1" req="49"/>
+			<code-of-honor-hospitality			req="1"/>
 			<dwarfism							req="-1"/>
-			<gluttony							req="58"/>
+			<gluttony							req="1"/>
 			<halfling-size						req="1" cost="-5"/>
 		</disadvantages>
 		<quirk-nouns>
@@ -572,7 +572,7 @@
 			<intolerance-racial					req="61"/>
 			<overweight							req="0.5"/>
 			<pyromania							req="01"/>
-			<sense-of-duty-nature				min="-3" max="-1" mean="-1.6" req="60"/>
+			<sense-of-duty-nature				min="-3" max="-2" mean="-3" req="60"/>
 			<skinny								req="56"/>
 			<stocky								req="-1"/>
 			<ugly								req="03"/>
@@ -679,7 +679,6 @@
 			<panhandling				max="2" req="19"/>
 		</skills>
 	</class>
-
 	<class alias="hrog" parents="halfling, roga" name="Halfling Rogue" nationality="Halfling" item-mod-inc="2" gender-ratio="68">
 		<stats>
 			<strength					min="6" max="11" mean="8"/>
@@ -781,6 +780,7 @@
 		</armor>
 	</class>
 
+
 	<class alias="dassassin" parents="dwarf, hwar" name="Dwarf Assassin" nationality="Gray-Dwarf"
 		   hair="gray, gray-black, raven-black, black, pure-black, black-gray, ink-black, iron-black, steel-gray"
 		   item-mod-inc="4" gender-ratio="72">
@@ -828,6 +828,7 @@
 			<dplate						req="12"/>
 		</armor>
 	</class>
+
 
 	<class alias="dwarf" parents="ltp" name="Dwarf" nationality="Dwarf, Dwarf, Dwarf, Dwarf, Gray-Dwarf" tech-level="4" age="20~76"
 		   images-male="male-dwarf1.gif,male-dwarf2.gif" images-female="female-dwarf.gif">
@@ -963,6 +964,7 @@
 			<sollerets						req="59"/>
 		</armor>
 	</class>
+
 
 	<class alias="orc" parents="ltp" name="Orc" nationality="Orc, Half-Orc, Black-Orc, Cave-Orc"
 	       hair="lice-infested-brunet, burn-scarred-skin, dingy-blue-black, filthy-rat-brown, yellowy-white, murky-brown, ink-black, scabby-melanoid, mangy-yellow, patchy-soot-brown, no, stringy-charcoal, stubbly-black, no"
@@ -1341,7 +1343,7 @@
 		<skills							min="1" max="4">
 			<!-- <skill name="acrobatics" spec="martial" min="-1" max="2" mean="0" req="02"/> storage: 'acrobatics':{'spec':'martial', min, max, etc.}  display ...   acrobatics:martial arts    11 -->
 			<skill name="area-knowledge" spec="village" min="-1" max="2" mean="0" req="20"/>
-			<skill name="area-knowledge" spec="city" min="-1" max="2" mean="0" req="23"/>
+			<skill name="area-knowledge" spec="city" min="-1" max="2" mean="0" req="23"/> 
 			<skill name="artist" spec="drawing" min="-1" max="2" mean="0" req="10"/>
 
 			<alchemy					max="2" req="02"/>
@@ -1697,6 +1699,7 @@
 		<armor	 min="0" max="3" mean="1"/>
 	</class>
 
+
 	<class alias="brb" parents="brba, grd" name="Human Barbarian" nationality="Human" item-mod-inc="0" gender-ratio="79"/>
 
 	<class alias="brba" parents="itma" abstract="1" name="Barbarian - Abstract" nationality="Human">
@@ -1934,7 +1937,7 @@
 			<skill name="survival" spec="jungle"			max="2" mean="-0.4" req="14"/>
 			<skill name="survival" spec="woodlands"			max="2" mean="-0.4" req="49"/>
 			<skill name="survival" spec="plains"			max="2" mean="-0.4" req="28"/>
-			<tracking					min="1" max="2" req="98"/>
+			<tracking					min="-1" max="2" req="88"/>
 			<two-hand-axe-mace			min="-1" max="2" req="02"/>
 
 			<spell-forest-warning		min= "-1" max="1" req="11"/>
@@ -2023,7 +2026,7 @@
 			<skill name="fast-draw" spec="sword"			max="1" req="26"/>
 			<fast-talk					min="-1" max="2" req="60"/>
 			<fencing					min="-1" max="1" req="11"/>
-			<filch						max="2" req="61"/>
+			<filch						max="2" req="61"/>			
 			<first-aid					max="1" req="10"/>
 			<hold-out					max="1" req="71"/>
 			<knife						min="-1" max="2" mean="2" req="1"/>
@@ -2070,6 +2073,7 @@
 		</armor>
 	</class>
 
+
 	<class alias="knt"  parents="knta, grd" name="Human Knight" nationality="Human" item-mod-inc="1" gender-ratio="96"/>
 
 	<class alias="knta" parents="itma"   abstract="1" name="Knight - Abstract" nationality="Human">
@@ -2104,7 +2108,7 @@
 			<social-stigma						req="00.1"/>
 			<disciplines-of-faith			req="20"/>
 		</disadvantages>
-
+ 
 		<skills							min="1" max="6" mean="2.4">
 			<axe-mace						min="0" max="2" req="78"/>
 			<bow							max="1" req="10"/>
@@ -2330,7 +2334,7 @@
 			<dexterity					min="11" max="16" mean="13.1"/>
 		</stats>
 
-		<skills							min="2" max="6" mean="3.2">
+		<skills							min="2" max="6" mean="3.2"> 
 			<acrobatics					max="2" req="10"/>
 			<boxing						req="-1"/>
 			<breath-control				max="2" req="07"/>

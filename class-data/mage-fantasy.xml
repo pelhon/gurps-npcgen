@@ -146,6 +146,7 @@
 		<weapons		min="1" max="3" mean="1.4"/>
 	</class>
 
+
 	<class alias="dbwiz" parents="bwiza, dwarf" name="Dwarf Battle Wizard" nationality="Dwarf" item-mod-inc="4" gender-ratio="76">
 		<stats>
 			<strength					min="10" max="15" mean="11.8"/>
@@ -268,15 +269,16 @@
 			<broad-sword				max="1" req="21"/>
 
 			<spell-animate-object		max="1" req="03"/>
+			<spell-bloat				max="2" req="03"/>
 			<spell-blur					max="1" req="05"/>
 			<spell-body-of-stone		max="1" req="01"/>
 			<spell-charm				max="1" req="12"/>
 			<spell-color-burst			max="1" req="08"/>
 			<spell-command				max="1" req="12"/>
-			<spell-complex-illusion		max="1" req="05"/>
+			<spell-complex-illusion		max="1" req="09"/>
 			<spell-concussion			max="1" req="05"/>
 			<spell-counterspell			max="0" req="06"/>
-			<spell-create-warrior		max="1" req="05"/>
+			<spell-create-warrior		max="1" req="05"/> 
 			<spell-curse-missile		max="1" req="11"/>
 			<spell-death-vision			max="1" req="10"/>
 			<spell-deflect-missile		max="1"	req="10"/>
@@ -285,10 +287,10 @@
 			<spell-drain-mana			min="-2" max="1" mean="0" req="22"/>
 			<spell-enrapture			max="1" req="14"/>
 			<spell-fire-bolt			max="1" req="14"/>
-			<spell-great-brand			max="0" req="09"/>
+			<spell-firewalker-zombie	max="1" req="02"/>
+			<spell-great-brand		max="0" req="09"/>
 			<spell-great-haste			max="1" req="04"/>
 			<spell-hawkflight			max="1" req="10"/>
-			<spell-healing-slumber		max="1" req="08"/>
 			<spell-hex					max="1"	req="04"/>
 			<spell-homing-fire-bolt		max="1" req="11"/>
 			<spell-hysteria				max="1" req="05"/>
@@ -296,7 +298,6 @@
 			<spell-iron-arm				max="1" mean="-1.8" req="26"/>
 			<spell-lava-bolt			max="1" req="08"/>
 			<spell-lightning			max="1" req="07"/>
-			<spell-mass-daze			max="1" req="08"/>
 			<spell-major-healing		max="1" req="07"/>
 			<spell-mental-stun			max="1" req="03"/>
 			<spell-might				max="1" req="06"/>
@@ -363,7 +364,7 @@
 			<true-faith							req="12"/>
 			<literacy							req="67"/>
 		</advantages>
-
+		
 		<disadvantages							mean="1.4">
 			<charitable							req="20"/>
 			<code-of-honor						min="-2" max="-2" req="03"/>
@@ -527,6 +528,7 @@
 		</weapons>
 	</class>
 
+
 	<class alias="hmag" parents="maga, ltp" name="Human Mage Apprentice" nationality="Human" item-mod-inc="3" gender-ratio="68"/>
 
 	<class alias="maga" parents="larma" abstract="1" name="Mage Apprentice - Abstract" nationality="Human">
@@ -637,6 +639,7 @@
 		</armor>
 	</class>
 
+
 	<class alias="hillusion" parents="illusiona, ltp" name="Human Illusionist" nationality="Human" item-mod-inc="3" gender-ratio="51"/>
 
 	<class alias="illusiona" parents="maga" abstract="1" name="Illusionist - Abstract" nationality="Human">
@@ -746,7 +749,7 @@
 			<ssword							req="36"/>
 		</weapons>
 
-		<armor		min="0" max="5">
+		<armor		min="0" max="5"> 
 			<amuletp	req="06"/>
 			<sbracers	req="20"/>
 		</armor>
